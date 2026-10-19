@@ -1,0 +1,33 @@
+# Persönliche Dateien
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Medien gehören nach OneDrive, nicht ins Repo.
+# Logos als SVG sind erlaubt (marke/).
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.psd
+*.ai
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.heic
+*.webp
+*.gif
+*.tif
+*.tiff
+*.zip
+
+# Systemdateien
+.DS_Store
+Thumbs.db
+desktop.ini
