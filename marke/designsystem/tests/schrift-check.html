@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schrift-Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@62..125,400..900&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Bebas+Neue&family=Big+Shoulders+Display:wght@400..900&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=Inter:wght@400..800&family=Oswald:wght@400..700&family=Saira+Condensed:wght@400;600;800&family=Sofia+Sans+Condensed:wght@400..900&display=block" rel="stylesheet">
+<style>
+  :root { --bg:#fff; --fg:#111; --muted:#666; --line:#ddd; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111; --fg:#eee; --muted:#999; --line:#333; } }
+  :root[data-theme="dark"] { --bg:#111; --fg:#eee; --muted:#999; --line:#333; }
+  body { background:var(--bg); color:var(--fg); font:14px/1.4 system-ui, sans-serif; margin:0; padding:16px; }
+  table { border-collapse:collapse; width:100%; }
+  td, th { border-bottom:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:middle; }
+  .spec { font-size:28px; white-space:nowrap; }
+  .ok { color:#0a7d32; font-weight:600; } .no { color:#c0141f; font-weight:600; }
+  small { color:var(--muted); }
+</style>
+</head>
+<body>
+<h1>Schrift-Check FootPulse</h1>
+<p><small>Messung im Browser: Ein Zeichen gilt als vorhanden, wenn es mit der Testschrift anders breit ist als mit zwei verschiedenen Ersatzschriften (Fallback). Ziffern gelten als gleich breit, wenn 0–9 mit <code>tabular-nums</code> exakt dieselbe Breite haben.</small></p>
+<table id="t"><thead><tr><th>Schrift</th><th>Probe</th><th>ä ö ü ß</th><th>ğ ş ı İ ç</th><th>Ziffern tabular</th><th>Ziffern ohne Einstellung</th></tr></thead><tbody></tbody></table>
+<script>
+const fonts = ["Barlow Condensed","Barlow","Archivo","Inter","IBM Plex Sans Condensed","IBM Plex Mono","Big Shoulders Display","Anton","Bebas Neue","Saira Condensed","Sofia Sans Condensed","Oswald"];
+const de = ["ä","ö","ü","ß","Ä","Ö","Ü"], tr = ["ğ","ş","ı","İ","ç","Ğ","Ş","Ç"];
+function w(txt, fam, tab, weight) {
+  const s = document.createElement("span");
+  s.style.cssText = `position:absolute;visibility:hidden;white-space:pre;font-size:100px;font-family:${fam};font-weight:${weight||700};font-variant-numeric:${tab?"tabular-nums":"normal"}`;
+  s.textContent = txt; document.body.appendChild(s); const r = s.getBoundingClientRect().width; s.remove(); return r;
+}
+function has(ch, f) {
+  const a = w(ch, `'${f}', monospace`), b = w(ch, `'${f}', serif`);
+  return Math.abs(a-b) < 0.01 && Math.abs(a - w(ch,"monospace")) > 0.01;
+}
+async function run() {
+  await document.fonts.ready;
+  for (const f of fonts) { for (const wt of [400,700]) { try { await document.fonts.load(`${wt} 20px '${f}'`, "ğşıİçäöüß0123456789"); } catch(e){} } }
+  const out = {};
+  const tb = document.querySelector("#t tbody");
+  for (const f of fonts) {
+    const loaded = document.fonts.check(`20px '${f}'`);
+    const deMiss = de.filter(c => !has(c,f)), trMiss = tr.filter(c => !has(c,f));
+    const fam = `'${f}', monospace`;
+    const tabW = [..."0123456789"].map(d => +w(d, fam, true).toFixed(2));
+    const proW = [..."0123456789"].map(d => +w(d, fam, false).toFixed(2));
+    const tabOk = Math.max(...tabW) - Math.min(...tabW) < 0.01;
+    const proOk = Math.max(...proW) - Math.min(...proW) < 0.01;
+    out[f] = { loaded, deMiss, trMiss, tabOk, tabSpread: +(Math.max(...tabW)-Math.min(...tabW)).toFixed(2), proOk };
+    tb.insertAdjacentHTML("beforeend", `<tr><td>${f}${loaded?"":" <span class=no>(nicht geladen)</span>"}</td>
+      <td class="spec" style="font-family:'${f}';font-weight:700;font-variant-numeric:tabular-nums">Ğ İ ş ı ç ß 1180 · 92</td>
+      <td class="${deMiss.length?"no":"ok"}">${deMiss.length?"fehlt: "+deMiss.join(" "):"alle da"}</td>
+      <td class="${trMiss.length?"no":"ok"}">${trMiss.length?"fehlt: "+trMiss.join(" "):"alle da"}</td>
+      <td class="${tabOk?"ok":"no"}">${tabOk?"ja":"nein (Spanne "+out[f].tabSpread+" px)"}</td>
+      <td>${proOk?"schon gleich breit":"proportional"}</td></tr>`);
+  }
+  window.__result = out;
+}
+run();
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 - **Für:** Kerem (später auch Hasan)
 - **Mit:** Marketing-Chat
-- **Status:** offen
+- **Status:** in Arbeit (Designsystem 2026, Runde 1 fertig, wartet auf Burhan)
 - **Entscheidet am Ende:** Burhan (Palette und Logo, weil sie auch die App betreffen)
 - **OneDrive:** `00 Marke/`
 
@@ -20,15 +20,15 @@ Fest ist nur die Richtung: **Rot und Schwarz**, das **Puls-Zeichen** als Markenm
 
 Kerem schickt alle bisher benutzten Logos und eine Auswahl bisheriger Posts (Bilder oder Screenshots) als Referenz. Claude legt eine Übersicht an: Was gibt es schon, was funktioniert, was ist uneinheitlich.
 
-- [ ] Logos gesammelt
+- [x] Logos gesammelt (04.11.2026, alter Ordner „Logo und Sonstiges“)
 - [ ] 10 bis 20 bisherige Posts gesammelt (aus allen vier Konten)
-- [ ] Übersicht geschrieben (unten im Abschnitt „Ergebnisse“)
+- [x] Übersicht geschrieben (`marke/designsystem/runde-1/grundlage.md`)
 
 ### 2. Analyse mit Meinung
 
 Claude bewertet den Bestand ehrlich: Was trägt die Marke, was wirkt beliebig, was passt nicht zu „Rot, Schwarz, Puls“. Dazu ein kurzer Blick auf Vorbilder (Sportmarken, Fußball-Datenkonten, FIFA-Optik): Was grenzt sich ab, was ist zu nah dran?
 
-- [ ] Analyse fertig
+- [x] Analyse fertig
 
 ### 3. Farbpalette
 
@@ -79,3 +79,7 @@ Daraus ein **Canva-Markenset**: Farben, Schriften, Logos, Vorlagen je Konto und 
 ## Ergebnisse und Notizen
 
 (Hier trägt der Marketing-Chat Übersicht, Analyse und Varianten ein.)
+
+**04.11.2026 · Erweiterung durch Burhan:** Die Aufgabe ist zum kompletten Designsystem 2026 erweitert worden (Markenkern, Farben mit Tests, Logo-System, Formensprache, Bausteine, Marketing-Vorlagen, Übergabe). Wo sich die beiden widersprechen, gilt die Erweiterung. Canva wird nicht direkt angebunden. Kerem bekommt am Ende eine Anleitung.
+
+- **Runde 1 (04.11.2026):** Markenkern, Bestandsanalyse, Vorbilder, drei Richtungen. Datei: `marke/designsystem/runde-1/grundlage.md`, Moodboards: `marke/designsystem/runde-1/richtungen.html`. Empfehlung: Richtung A „Anzeigetafel“. Wartet auf Burhans Wahl.
