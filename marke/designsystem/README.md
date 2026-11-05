@@ -26,12 +26,13 @@ Ordner `option-a-anzeigetafel/`, `option-b-messgeraet/`, `option-c-flutlicht/`:
 | `tokens.css` / `tokens-v1.css` | Dieselben Werte als CSS (v2 und die erste Runde v1) |
 | `testseiten.html` | Spielerkarte, Tabs, Tabelle, Chips, Team der Woche, Warteliste, Posts, Profilraster, Feed. Mit `?theme=light` und `?v=1` umschaltbar |
 | `vorlagen.html` | Alle Marketing-Vorlagen in Originalgröße |
+| `beispiele.html` | 12 weitere Beispiele zum Vergleichen: App-Screens Dark/Light, Bewegungen, Website, Homescreen, Profilbilder, Posts je Konto, YouTube, Story-Umfrage |
 | `logo-regeln.html` | Varianten, Liga-Konten, Schutzzone, Mindestgröße, Do's und Don'ts |
 | `logo/` | Alle Logos als SVG |
 
 Design-System-Artefakte (privat, Freigabe über „Teilen“): [A](https://claude.ai/artifact/87k4nXC24dJHUAwpWWbc6y) · [B](https://claude.ai/artifact/QttJMNLHMkkQuE3brQ1jre) · [C](https://claude.ai/artifact/HfHw9KDWWJpAGQ5PcWvYUx)
 
-OneDrive `00 Marke/Designsystem 2026/`: Logos als PNG und SVG in allen Größen, Screenshots der Tests, Vorlagen-Exporte, Links zu den Schriften.
+OneDrive `00 Marke/Designsystem 2026/`: Logos als PNG und SVG in allen Größen, Screenshots der Tests, Vorlagen-Exporte, Links zu den Schriften. Vergleichstafeln A | B | C in `Screenshots/Beispiele/`.
 
 ## Neu bauen (für spätere Änderungen)
 
