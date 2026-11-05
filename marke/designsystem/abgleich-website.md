@@ -36,6 +36,21 @@ Marketing und Website nutzen dieselben Farben, Schriften und Formen. Ändert ein
 
 ## Einträge
 
+### AB-20261105-03 · Website-Builder · Rollen für Tabellenzonen
+
+Die Website führt nach FS-20261105-08 vier eigene Zonenrollen in `frontend/src/lib/theme.ts` ein. Die Übergabe enthält hierfür keine Werte. Die Rollen färben die Randmarke und die dazugehörige Legende ausschließlich bei veröffentlichter Zonen-Policy.
+
+| Rolle | Bisherige Zuordnung | Neuer Website-Wert | Kontrast auf `surface` |
+| --- | --- | --- | --- |
+| `zoneChampions` | `matchRatingElite` | `#91B9FF` | 8,31:1 |
+| `zoneEurope` | `gold` | `#C7A9F0` | 8,14:1 |
+| `zoneConference` | `positive` | `#89CFD9` | 9,41:1 |
+| `zoneRelegation` | `accent` | `#F392A7` | 7,44:1 |
+
+Die kleinste Kontrastrate gegen `surfaceOverlay` beträgt 5,39:1. Für Marketing zur Info.
+
+Status: offen (Website-Abnahme Schritt 4 folgt)
+
 ### AB-20261105-02 · Website-Builder · Option A, Schritt 0
 
 | Rolle | Vorher | Jetzt |
