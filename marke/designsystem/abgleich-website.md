@@ -70,9 +70,9 @@ Neue Rollen aus der Übergabe: `tabTrack #15171C`, `tabActive #34373D`, `surface
 
 Barlow 400/500/600 kommt als Textschrift hinzu, Barlow Condensed bleibt für Überschriften, Zahlen und das Logo. Barlow Condensed 800, die Typostufen der Übergabe und Schnitte 8/14/28 px liegen als Rollen vor. Radius xs ist neu mit 2 px, sm bleibt 4 px, md wechselt 8 → 6 px und lg 14 → 8 px. Die bisherigen xl/xxl-Aliasse gehen im allgemeinen Rahmen auf 8 px. Die TOTW-spezifischen Radien und Schriftzuschnitte behalten ihre Werte.
 
-Für Marketing gilt die entschiedene dunkle Poor-Ziffer. Türkis ist der aktuelle Prüfstand. Der lokale Vergleich zeigt auch Grün `#2ECC71 / #0D2618`.
+Für Marketing gilt die dunkle Poor-Ziffer. O-20261105-10 setzt die Aufwertung vorläufig auf Grün (`ratingUp #2ECC71`, `positiveMuted #0D2618`). Bei einer späteren Änderung des Hintergrundtons wird Türkis erneut verglichen.
 
-Status: offen (Entscheidung über die Aufwertungsfarbe)
+Status: geschlossen (Entscheidung über die Aufwertungsfarbe)
 
 
 ### AB-20261105-01 · Website-Supervisor · Start des Website-Umbaus mit Option A
