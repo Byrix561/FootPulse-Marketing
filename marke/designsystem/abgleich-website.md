@@ -36,6 +36,8 @@ Marketing und Website nutzen dieselben Farben, Schriften und Formen. Ändert ein
 
 ## Einträge
 
+Flächen: Option A bestätigt (Burhan 05.11.).
+
 ### AB-20261105-03 · Website-Builder · Rollen für Tabellenzonen
 
 Die Website führt nach FS-20261105-08 vier eigene Zonenrollen in `frontend/src/lib/theme.ts` ein. Die Übergabe enthält hierfür keine Werte. Die Rollen färben die Randmarke und die dazugehörige Legende ausschließlich bei veröffentlichter Zonen-Policy.
