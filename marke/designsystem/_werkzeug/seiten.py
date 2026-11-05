@@ -3,6 +3,7 @@
 Alle Spieler und Vereine sind erfunden. Keine echten Wappen, keine echten Liga-Logos.
 """
 import optionen as O
+import totw as XI
 
 SPIELER = [  # Position, Name, Overall, Bewegung, Verein
     ("TW", "G. Iversen", 82, +1, "NHF"), ("LV", "A. Şahin", 79, 0, "ATL"), ("IV", "R. Novak", 84, +2, "RVS"), ("IV", "D. Moreau", 81, -1, "NHF"),
@@ -237,7 +238,7 @@ body{margin:0;background:var(--background);color:var(--textPrimary);font-family:
   if (q.get("v") === "1") document.getElementById("tok").href = "tokens-v1.css";
   document.documentElement.dataset.safe = q.get("safe") === "0" ? "0" : "1";
 </script>
-<style>{css}{STIL[r]}
+<style>{css}{STIL[r]}{XI.CSS if r == "A" else ""}
 [data-safe="0"] .safe{{display:none}}
 </style>
 </head>
@@ -293,7 +294,7 @@ body{margin:0;background:var(--background);color:var(--textPrimary);font-family:
 </section>
 
 <section class="blk" id="t-totw"><span class="label cap">Team der Woche · 4-3-3</span>
-<div class="pitch"><span class="box1"></span><span class="box2"></span>{totw}</div>
+{XI.app_block(10) if r == "A" else '<div class="pitch"><span class="box1"></span><span class="box2"></span>' + totw + '</div>'}
 </section>
 
 <section class="blk" id="t-warteliste"><span class="label cap">Wartelisten-Seite (Handy)</span>

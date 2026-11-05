@@ -25,8 +25,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 
 | Option | Modus | v1 bestanden | v2 bestanden | offen in v2 |
 |---|---|---|---|---|
-| A Anzeigetafel | dark | 45 / 75 | **75 / 76** | accent auf surface |
-| A Anzeigetafel | light | 46 / 69 | **70 / 70** | – |
+| A Anzeigetafel | dark | 45 / 75 | **74 / 75** | accent auf surface |
+| A Anzeigetafel | light | 46 / 69 | **69 / 69** | – |
 | B Messgerät | dark | 44 / 75 | **72 / 75** | mkRed auf mkInk, accent auf background, accent auf surface |
 | B Messgerät | light | 49 / 69 | **69 / 69** | – |
 | C Flutlicht | dark | 44 / 75 | **73 / 75** | mkRed auf mkInk, accent auf surface |
@@ -40,7 +40,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 - **Noten-Skala:** Per Rechnung über 60 000 Kombinationen gesucht: Jedes Paar der fünf Stufen hat jetzt in allen vier Sehweisen ΔE ≥ 9,8 (v1: 2,1). Dafür ist die Helligkeit nicht mehr stufenweise ansteigend. Die Zahl steht deshalb immer im Chip.
 - **Auf und Ab:** Aufwertung ist jetzt Türkis statt Grün und deutlich heller (Dunkel) bzw. dunkler (Hell) als Abwertung. So bleibt sie auch bei Rot-Grün-Schwäche unterscheidbar (ΔE ≥ 10). Pfeil und Vorzeichen sind trotzdem Pflicht.
 - **Liga-Akzente:** Gesucht per Rechnung über alle Farbtöne: BL Blauviolett, PL Mint, SL Flieder. Mehr als ΔE 10,8 ist mit Gold und Rot im Vergleich nicht erreichbar, deshalb Schwelle 10. Liga-Farben sind Flächen mit dunkler Schrift, keine Schriftfarben, und stehen immer neben dem Kürzel.
-- **Rot für Schlecht (nur A, Runde 4):** Burhans Wunsch: Note Poor und Abwertung sind ein echtes Rot, kein Rosa. Note Poor ist jetzt die Button-Fläche (#E31D29) mit weißer Zahl. Abwertung als Schrift ist #FE423D (WCAG 5,5 : 1, APCA Lc 41) und gilt nur für große Zahlen ab 32 px und Symbole. Der Abwertungs-Chip ist eine rote Fläche mit weißer Schrift (Lc 74).
+- **Rot für Schlecht (nur A, Runde 4):** Burhans Wunsch: zwei echte Rottöne, kein Rosa. Note Poor ist das Rot von Sofascore (#DC0C00) mit weißer Zahl: 5,0 : 1, Lc 76. Abwertung ist das Rot der Website (#FF5260, wie heute in der App) auf dunklem Rot-Chip: 5,1 : 1, aber nur Lc 41. Das ist eine bewusste Ausnahme: WCAG hält, APCA verlangt für kleine Schrift Lc 60. Der Chip trägt deshalb immer Pfeil und Minus, fett. Im Hell-Modus bleibt Abwertung #BB081A (6,0 : 1, Lc 74).
 - **Marketing:** Rote Wörter auf Schwarz nutzen accentText, nicht mkRed. mkRed ist nur Fläche.
 
 ## Bewusst offene Punkte in v2 (mit Regel)
@@ -82,8 +82,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingUp auf background | `#5EF9F1` | `#0D0F14` | 14,88 | -89,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf surface | `#5EF9F1` | `#1D1F24` | 12,79 | -87,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf positiveMuted | `#5EF9F1` | `#002F2D` | 11,28 | -86,0 | – | ≥4,5 · Lc 60 | ✅ |
-| Großtext | ratingDown auf background | `#FE423D` | `#0D0F14` | 5,53 | -40,7 | – | ≥3,0 · Lc 40 | ✅ |
-| Abwertungs-Chip | onAccent auf accent | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥4,5 · Lc 60 | ✅ |
+| Abwertung (Ausnahme) | ratingDown auf accentMuted | `#FF5260` | `#401011` | 5,10 | -41,5 | – | ≥4,5 · Lc 40 | ✅ |
 | Text | goldText auf background | `#F2BF47` | `#0D0F14` | 11,24 | -72,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf surface | `#F2BF47` | `#1D1F24` | 9,67 | -70,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#F2BF47` | `#392C0C` | 8,00 | -67,8 | – | ≥4,5 · Lc 60 | ✅ |
@@ -92,7 +91,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#0D0F14` | `#9EFFFE` | 16,60 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#0D0F14` | `#D6FC91` | 16,61 | 95,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#0D0F14` | `#F8A052` | 9,26 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DC0C00` | 5,00 | -76,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0D0F14` | `#9CACFF` | 8,91 | 61,2 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0D0F14` | `#9DFFB2` | 15,86 | 93,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#0D0F14` | `#DECEFF` | 13,12 | 81,3 | – | ≥4,5 · Lc 60 | ✅ |
@@ -118,16 +117,16 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Stufe | surfaceHover → surfacePressed | `#2F3237` | `#26282D` | 1,15 | – | 3,9 | ΔL ≥3 | ✅ sichtbar |
 | Stufe | surface → surfaceSelected | `#44211F` | `#1D1F24` | 1,16 | – | 5,6 | ΔL ≥3 | ✅ deutlich |
 | Stufe | surface → surfaceDisabled | `#14161A` | `#1D1F24` | 1,10 | – | 4,0 | ΔL ≥3 | ✅ sichtbar |
-| Farbschwäche | Auf ↔ Ab (normal) | `#5EF9F1` | `#FE423D` | – | – | 42,5 | ΔE ≥10 | ✅ |
+| Farbschwäche | Auf ↔ Ab (normal) | `#5EF9F1` | `#FF5260` | – | – | 40,1 | ΔE ≥10 | ✅ |
 | Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 13,8 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (normal): BL–SL | – | – | – | – | 13,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (protan) | `#EBEDF1` | `#7B703A` | – | – | 41,1 | ΔE ≥10 | ✅ |
+| Farbschwäche | Auf ↔ Ab (protan) | `#EBEDF1` | `#80795F` | – | – | 37,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Noten-Skala, engstes Paar (protan): Good–Excellent | – | – | – | – | 13,9 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (protan): BL–SL | – | – | – | – | 11,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (deutan) | `#D4DBF2` | `#AA9935` | – | – | 26,2 | ΔE ≥10 | ✅ |
+| Farbschwäche | Auf ↔ Ab (deutan) | `#D4DBF2` | `#AC9E5B` | – | – | 23,1 | ΔE ≥10 | ✅ |
 | Farbschwäche | Noten-Skala, engstes Paar (deutan): Good–Excellent | – | – | – | – | 14,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold | – | – | – | – | 11,6 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (tritan) | `#00FFF6` | `#FF0043` | – | – | 48,9 | ΔE ≥10 | ✅ |
+| Farbschwäche | Auf ↔ Ab (tritan) | `#00FFF6` | `#FF2458` | – | – | 47,4 | ΔE ≥10 | ✅ |
 | Farbschwäche | Noten-Skala, engstes Paar (tritan): Good–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (tritan): SL–Gold | – | – | – | – | 10,8 | ΔE ≥10 | ✅ |
 | OLED | background #0D0F14 (R13 G15 B20) | – | `#0D0F14` | – | – | – | kein Kanal unter 12 | ✅ |
@@ -163,8 +162,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingUp auf background | `#005763` | `#DBDEE3` | 6,12 | 68,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf surface | `#005763` | `#F2F4F7` | 7,49 | 81,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf positiveMuted | `#005763` | `#CBECF2` | 6,61 | 73,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Großtext | ratingDown auf background | `#BB081A` | `#DBDEE3` | 4,92 | 60,8 | – | ≥3,0 · Lc 40 | ✅ |
-| Abwertungs-Chip | onAccent auf accent | `#FCFCFC` | `#DB1B26` | 4,88 | -75,9 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | ratingDown auf accentMuted | `#BB081A` | `#FFDDDA` | 5,25 | 64,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf background | `#845500` | `#DBDEE3` | 4,75 | 62,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf surface | `#845500` | `#F2F4F7` | 5,81 | 74,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#845500` | `#F7E5B9` | 5,14 | 66,9 | – | ≥4,5 · Lc 60 | ✅ |
@@ -173,7 +171,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#0C0E13` | `#9EFFFE` | 16,72 | 96,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#0C0E13` | `#D6FC91` | 16,72 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#0C0E13` | `#F8A052` | 9,32 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DB1B26` | 4,88 | -75,9 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DC0C00` | 5,00 | -76,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0C0E13` | `#9CACFF` | 8,97 | 61,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0C0E13` | `#9DFFB2` | 15,98 | 93,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#0C0E13` | `#DECEFF` | 13,22 | 81,4 | – | ≥4,5 · Lc 60 | ✅ |

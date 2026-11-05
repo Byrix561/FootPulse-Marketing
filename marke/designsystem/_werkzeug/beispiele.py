@@ -4,6 +4,7 @@ Alle Spieler und Vereine sind erfunden. Fotos sind Platzhalter.
 import re
 import optionen as O
 import seiten
+import totw as XI
 
 LOGO_D = "logo/kombi-quer-auf-dunkel.svg"
 LOGO_H = "logo/kombi-quer-auf-hell.svg"
@@ -106,7 +107,13 @@ def vergleich(r):
 <img src="{LOGO_W}" style="height:24px;margin-top:16px" alt=""></div></div></section>"""
 
 
-def totw():
+def totw(r="B"):
+    if r == "A":  # Runde 4: nah am heutigen App-TOTW (Burhans Screenshot)
+        return f"""<section class="ex post dark" id="ex-totw" style="width:540px;height:675px">
+<div class="in" style="padding:22px 22px 18px"><div style="display:flex;justify-content:space-between;align-items:center"><span class="lgt" style="background:var(--leagueSL)">SL</span><span class="t" style="font-size:16px;margin-right:64px" lang="tr">11. Hafta · 4-3-3</span></div>
+<div class="hl2" lang="tr" style="margin-top:2px;font-size:36px">Haftanın Takımı</div>
+<div style="font-size:7.4px;margin:8px 0 6px">{XI.spielfeld(68)}</div>
+<div style="display:flex;justify-content:space-between;align-items:center"><span class="s" style="font-size:14px" lang="tr">MVP: Demir · ★ 9,3 · Neden? Profilde.</span><img src="{LOGO_D}" style="height:20px" alt=""></div></div></section>"""
     pos = [(50, 87, 82, "Iversen"), (16, 66, 79, "Şahin"), (38, 69, 84, "Novak"), (62, 69, 81, "Moreau"), (84, 66, 80, "Brennan"), (26, 45, 86, "Okafor"),
            (50, 48, 83, "Yıldız"), (74, 45, 82, "Lindqvist"), (18, 22, 85, "Silva"), (50, 17, 88, "Demir"), (82, 22, 84, "Öztürk")]
     pm = "".join(f'<div class="pm2{" mvp" if n == "Demir" else ""}" style="left:{x}%;top:{y}%"><b class="num">{o}</b><span lang="tr">{n}</span></div>' for x, y, o, n in pos)
@@ -189,9 +196,9 @@ body{{background:#5a5a5a}} .wrapx{{display:flex;flex-wrap:wrap;gap:40px;padding:
 .po{{display:flex;gap:10px}} .po span{{flex:1;text-align:center;padding:14px 6px;font-weight:700;font-size:17px}}
 .pa{{background:var(--accent);color:var(--onAccent)}} .pb{{background:var(--surfaceOverlay);color:var(--textPrimary)}}
 """
-    body = "".join([profil("dark"), profil("light"), rangliste(), web(), homescreen(r), konten(), abwertung(r), vergleich(r), totw(), banter(), youtube(r), umfrage(r)])
+    body = "".join([profil("dark"), profil("light"), rangliste(), web(), homescreen(r), konten(), abwertung(r), vergleich(r), totw(r), banter(), youtube(r), umfrage(r)])
     return f"""<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Beispiele {r} {O.NAME[r]}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{O.SCHRIFT[r]['google']}&display=block" rel="stylesheet">
-<link rel="stylesheet" href="tokens.css"><style>{css}{seiten.STIL[r]}{eigen}{EXTRA[r]}</style></head>
+<link rel="stylesheet" href="tokens.css"><style>{css}{seiten.STIL[r]}{XI.CSS if r == 'A' else ''}{eigen}{EXTRA[r]}</style></head>
 <body data-theme="dark"><div class="wrapx">{body}</div></body></html>"""

@@ -46,10 +46,10 @@ def _v2_light(base, hue, chroma, warm_h, txt_h, red, extra):
 A2_DARK = _v2_dark(A_DARK, 265, .010, 20, .008, 265, (.135, .170, .205, .240, .285, .335), (.585, .225, 26), dict(
     onAccent=K(.990, 0, 0), onMkRed=K(.990, 0, 0), onMkRedLarge=K(.990, 0, 0), focusRing=K(.930, .010, 265),
     ratingInk=K(.170, .010, 265), mkInk=K(.170, .010, 265),
-    # Runde 4 (Burhans Wahl A): Abwertung und Note Poor als echtes Rot statt Rosa
-    ratingDown=K(.660, .225, 27), ratingPoor="=accent", onRatingPoor="=onAccent"))
+    # Runde 4 (Burhans Wahl A): Note Poor = Sofascore-Rot, Abwertung = Website-Rot. Zwei verschiedene Rottöne.
+    ratingDown="#FF5260", ratingPoor="#DC0C00", onRatingPoor="=onAccent"))
 A2_LIGHT = _v2_light(A_LIGHT, 265, .008, 20, 265, (.570, .220, 26), dict(
-    onAccent=K(.990, 0, 0), ratingPoor="=accent", onRatingPoor="=onAccent"))
+    onAccent=K(.990, 0, 0), ratingPoor="#DC0C00", onRatingPoor="=onAccent"))
 
 B2_DARK = _v2_dark(B_DARK, 250, .005, 30, .005, 250, (.160, .195, .230, .265, .310, .360), (.578, .215, 27), dict(
     ratingUp=K(.880, .090, 232), positiveMuted=K(.290, .045, 240), surfaceSelected=K(.320, .045, 240),
@@ -76,6 +76,6 @@ V2_GRUENDE = [
     ("Noten-Skala", "Per Rechnung über 60 000 Kombinationen gesucht: Jedes Paar der fünf Stufen hat jetzt in allen vier Sehweisen ΔE ≥ 9,8 (v1: 2,1). Dafür ist die Helligkeit nicht mehr stufenweise ansteigend. Die Zahl steht deshalb immer im Chip."),
     ("Auf und Ab", "Aufwertung ist jetzt Türkis statt Grün und deutlich heller (Dunkel) bzw. dunkler (Hell) als Abwertung. So bleibt sie auch bei Rot-Grün-Schwäche unterscheidbar (ΔE ≥ 10). Pfeil und Vorzeichen sind trotzdem Pflicht."),
     ("Liga-Akzente", "Gesucht per Rechnung über alle Farbtöne: BL Blauviolett, PL Mint, SL Flieder. Mehr als ΔE 10,8 ist mit Gold und Rot im Vergleich nicht erreichbar, deshalb Schwelle 10. Liga-Farben sind Flächen mit dunkler Schrift, keine Schriftfarben, und stehen immer neben dem Kürzel."),
-    ("Rot für Schlecht (nur A, Runde 4)", "Burhans Wunsch: Note Poor und Abwertung sind ein echtes Rot, kein Rosa. Note Poor ist jetzt die Button-Fläche (#E31D29) mit weißer Zahl. Abwertung als Schrift ist #FE423D (WCAG 5,5 : 1, APCA Lc 41) und gilt nur für große Zahlen ab 32 px und Symbole. Der Abwertungs-Chip ist eine rote Fläche mit weißer Schrift (Lc 74)."),
+    ("Rot für Schlecht (nur A, Runde 4)", "Burhans Wunsch: zwei echte Rottöne, kein Rosa. Note Poor ist das Rot von Sofascore (#DC0C00) mit weißer Zahl: 5,0 : 1, Lc 76. Abwertung ist das Rot der Website (#FF5260, wie heute in der App) auf dunklem Rot-Chip: 5,1 : 1, aber nur Lc 41. Das ist eine bewusste Ausnahme: WCAG hält, APCA verlangt für kleine Schrift Lc 60. Der Chip trägt deshalb immer Pfeil und Minus, fett. Im Hell-Modus bleibt Abwertung #BB081A (6,0 : 1, Lc 74)."),
     ("Marketing", "Rote Wörter auf Schwarz nutzen accentText, nicht mkRed. mkRed ist nur Fläche."),
 ]

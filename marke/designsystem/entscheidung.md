@@ -6,9 +6,9 @@ Für: Burhan · Stand: 05.11.2026 · Vorbereitet vom Marketing-Chat
 
 Burhan wählt **Option A „Anzeigetafel“**, mit diesen Änderungen:
 
-- **Rot für Schlecht:** Die Note Poor (z. B. 4,8) und die Abwertung sind jetzt ein echtes Rot statt Rosa. Die Note Poor ist eine rote Fläche (#E31D29) mit weißer Zahl. Der Abwertungs-Chip ist ebenfalls eine rote Fläche mit weißer Schrift. „Abwertung der Woche“ und große Minus-Zahlen sind #FE423D. Gemessen: weiße Zahl auf Rot 4,58 : 1 und Lc 74; #FE423D auf Schwarz 5,5 : 1, aber nur Lc 41, deshalb nur ab 32 px und für Symbole. A Dark 75/76, A Light 70/70. Erledigt.
+- **Rot für Schlecht (zweite Fassung):** Zwei verschiedene Rottöne, kein Rosa. Die Note Poor (z. B. 4,8) ist das Rot von Sofascore (#DC0C00) mit weißer Zahl: 5,0 : 1, Lc 76. Die Abwertung ist das Rot der Website (#FF5260, wie heute in der App) auf dunklem Rot-Chip: 5,1 : 1, aber nur Lc 41. Das ist eine bewusste Ausnahme, der Chip trägt immer ▼ und Minus. Im Hell-Modus bleibt die Abwertung #BB081A. A Dark 74/75, A Light 69/69. Erledigt.
 - **Logo:** Vorerst bleiben das heutige Logo und das A-Logo. Ein eigener Termin nur für das Logo folgt.
-- **Team der Woche:** Die A-Fassung passt nicht. Es soll nahe am heutigen TOTW bleiben. Burhan schickt dazu einen Screenshot. Offen.
+- **Team der Woche:** Nach Burhans Screenshot neu gebaut, nah am heutigen TOTW: Karte mit Position, NOW-Wert in Gold, rundem Foto, Name, Tor- oder Vorlagen-Chip und Noten-Chip, MVP mit Krone, Summenzeile darunter. Aus A kommen nur Farben, Schriften und die schräge Ecke. Baustein: `_werkzeug/totw.py`. Fotos sind noch Platzhalter (Initialen).
 - **Aufbau der Seiten:** Den will Burhan später ändern. Karten und Symbole bleiben, wie sie in A sind.
 
 Es gibt drei vollständige Optionen. Jede hat Farben für Dark und Light, eine Marketing-Erweiterung, Liga-Akzente, Schrift, Logo-System, Formensprache, Bausteine und Vorlagen. Alle drei nutzen dieselben Rollennamen wie die App. Deshalb lassen sie sich auch **mischen**.

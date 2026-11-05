@@ -79,9 +79,8 @@ def tokens_css(r, p):
         lines.append(sel + " {")
         for k in ALLE:
             lines.append(f"  --{k}: {p[theme][k]};")
-        voll = p[theme]["ratingPoor"] == p[theme]["accent"]  # A ab Runde 4: Abwertungs-Chip als rote Fläche
-        lines.append(f"  --downChipBg: var(--{'accent' if voll else 'accentMuted'});")
-        lines.append(f"  --downChipFg: var(--{'onAccent' if voll else 'ratingDown'});")
+        lines.append("  --downChipBg: var(--accentMuted);")
+        lines.append("  --downChipFg: var(--ratingDown);")
         lines.append("}")
     s = O.SCHRIFT[r]
     lines.append(":root {")

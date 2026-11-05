@@ -29,12 +29,12 @@ Stand 04.11.2026. Vorlage für den App-Umbau: Jede Zeile ist ein Austausch in de
 | `pitchLine` | Spielfeld-Linien | `#285442` | `#2D5742` | `#85B99A` | heller (ΔL 1.1) |
 | `ratingUp` | Aufwertung (immer mit ▲ und +) | `#2ECC71` | `#5EF9F1` | `#005763` | heller (ΔL 15.3) |
 | `positiveMuted` | Hintergrund Aufwertungs-Chip | `#0D2618` | `#002F2D` | `#CBECF2` | heller (ΔL 3.2) |
-| `ratingDown` | Abwertung (immer mit ▼ und −) | `#FF5260` | `#FE423D` | `#BB081A` | dunkler (ΔL 2.2) |
+| `ratingDown` | Abwertung (immer mit ▼ und −) | `#FF5260` | `#FF5260` | `#BB081A` | gleich |
 | `ratingElite` | Note Elite (Fläche, Zahl in ratingInk) | `#3B82F6` | `#85BAFF` | `#85BAFF` | heller (ΔL 15.6) |
 | `ratingExcellent` | Note Excellent | `#18B981` | `#9EFFFE` | `#9EFFFE` | heller (ΔL 24.3) |
 | `ratingGood` | Note Good | `#8BC34A` | `#D6FC91` | `#D6FC91` | heller (ΔL 18.7) |
 | `ratingAverage` | Note Average | `#F2B84B` | `#F8A052` | `#F8A052` | dunkler (ΔL 3.7) |
-| `ratingPoor` | Note Poor | `#EF5B5B` | `#E31D29` | `#DB1B26` | dunkler (ΔL 8.0) |
+| `ratingPoor` | Note Poor | `#EF5B5B` | `#DC0C00` | `#DC0C00` | dunkler (ΔL 10.1) |
 
 ## Neue Rollen
 
