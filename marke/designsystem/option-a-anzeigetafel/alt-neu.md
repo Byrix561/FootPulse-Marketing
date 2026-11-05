@@ -20,7 +20,7 @@ Stand 04.11.2026. Vorlage für den App-Umbau: Jede Zeile ist ein Austausch in de
 | `textMuted` | Hinweise, ab 14 px halbfett | `#82828E` | `#A7A9AE` | `#565960` | heller (ΔL 12.4) |
 | `textFaint` | Nur Nicht-Text: Pfeile, Trenner, Icons | `#666672` | `#7B7D82` | `#777A80` | heller (ΔL 7.5) |
 | `accent` | Rote Flächen, Buttons, Linien ≥ 2 px | `#F02D3A` | `#E31D29` | `#DB1B26` | dunkler (ΔL 3.4) |
-| `accentText` | Rote Schrift, kleine rote Punkte | `#FF5260` | `#FFA29F` | `#BB081A` | heller (ΔL 12.4) |
+| `accentText` | Rote Schrift, kleine rote Punkte | `#FF5260` | `#FF5260` | `#BB081A` | gleich |
 | `accentDim` | Gedrücktes Rot, rote Linie auf Rot | `#9F1D28` | `#A32224` | `#ED8B87` | heller (ΔL 1.1) |
 | `accentMuted` | Hintergrund roter Chips | `#381015` | `#401011` | `#FFDDDA` | heller (ΔL 1.5) |
 | `gold` | Nur verdiente Auszeichnung (MVP, Rang 1) | `#F1C15B` | `#F2BF47` | `#EAB532` | dunkler (ΔL 0.5) |
@@ -30,10 +30,10 @@ Stand 04.11.2026. Vorlage für den App-Umbau: Jede Zeile ist ein Austausch in de
 | `ratingUp` | Aufwertung (immer mit ▲ und +) | `#2ECC71` | `#5EF9F1` | `#005763` | heller (ΔL 15.3) |
 | `positiveMuted` | Hintergrund Aufwertungs-Chip | `#0D2618` | `#002F2D` | `#CBECF2` | heller (ΔL 3.2) |
 | `ratingDown` | Abwertung (immer mit ▼ und −) | `#FF5260` | `#FF5260` | `#BB081A` | gleich |
-| `ratingElite` | Note Elite (Fläche, Zahl in ratingInk) | `#3B82F6` | `#85BAFF` | `#85BAFF` | heller (ΔL 15.6) |
-| `ratingExcellent` | Note Excellent | `#18B981` | `#9EFFFE` | `#9EFFFE` | heller (ΔL 24.3) |
-| `ratingGood` | Note Good | `#8BC34A` | `#D6FC91` | `#D6FC91` | heller (ΔL 18.7) |
-| `ratingAverage` | Note Average | `#F2B84B` | `#F8A052` | `#F8A052` | dunkler (ΔL 3.7) |
+| `ratingElite` | Note Elite (Fläche, Zahl in ratingInk) | `#3B82F6` | `#3B82F6` | `#3B82F6` | gleich |
+| `ratingExcellent` | Note Excellent | `#18B981` | `#18B981` | `#18B981` | gleich |
+| `ratingGood` | Note Good | `#8BC34A` | `#8BC34A` | `#8BC34A` | gleich |
+| `ratingAverage` | Note Average | `#F2B84B` | `#F2B84B` | `#F2B84B` | gleich |
 | `ratingPoor` | Note Poor | `#EF5B5B` | `#DC0C00` | `#DC0C00` | dunkler (ΔL 10.1) |
 
 ## Neue Rollen

@@ -1,5 +1,8 @@
 """Team der Woche (FootPulse XI) für Option A, nah am heutigen App-Aufbau (Burhans Screenshot vom 05.11.2026).
 
+WICHTIG (Burhan, 05.11.2026): Das ist nur eine Farbprobe. Das TOTW in App und Website bleibt im Aufbau, wie es ist.
+Übernommen werden nur die Farben (Noten-Skala, Rot, Gold). Nicht nachbauen.
+
 Aufbau wie heute: Spielerkarte mit Position, NOW-Wert, rundem Foto, Name, Beitrags-Chip (Tore/Vorlagen) und Noten-Chip.
 MVP mit Krone. Neu ist nur die Gestaltung aus A: Farben aus den Tokens, eckige Karten mit Schräge, A-Schriften.
 Alle Spieler sind erfunden. Fotos sind Platzhalter (Initialen), bis frei lizenzierte Bilder da sind.

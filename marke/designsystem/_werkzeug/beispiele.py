@@ -65,7 +65,7 @@ def rangliste():
 def web():
     return f"""<section class="ex" id="ex-web" data-theme="dark" style="background:var(--background)">
 <header class="wh"><img src="{LOGO_D}" style="height:30px" alt=""><nav><span>So funktioniert's</span><span>Team der Woche</span><span>Ligen</span></nav><button class="btn" style="width:auto;height:40px;padding:0 18px">Warteliste</button></header>
-<div class="wb"><div class="wl"><div class="status"><span class="chip up"><b>●</b> Süper Lig live</span><span class="chip flat">Premier League bald</span><span class="chip flat">Bundesliga bald</span></div>
+<div class="wb"><div class="wl"><div class="status"><span class="chip up"><b>●</b> Süper Lig verfügbar</span><span class="chip flat">Premier League bald</span><span class="chip flat">Bundesliga bald</span></div>
 <h1 class="h">Jede Zahl hat einen Grund.</h1><p>FootPulse bewertet Spieler nach dem, was auf dem Platz passiert, und erklärt nach jedem Spieltag, warum sich ein Wert bewegt.</p>
 <div class="wf"><input class="input" placeholder="deine@mail.de"><button class="btn" style="width:auto;padding:0 22px">Auf die Warteliste</button></div></div>
 <div class="wr"><div class="card" style="width:300px;transform:rotate(-2deg);margin-right:150px"><span class="cardline"></span><div class="top2"><div class="ovrbox"><span class="ovr num">88</span><span class="pos label">ST</span></div>{seiten._bew(4)}</div>

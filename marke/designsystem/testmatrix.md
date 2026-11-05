@@ -25,8 +25,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 
 | Option | Modus | v1 bestanden | v2 bestanden | offen in v2 |
 |---|---|---|---|---|
-| A Anzeigetafel | dark | 45 / 75 | **74 / 75** | accent auf surface |
-| A Anzeigetafel | light | 46 / 69 | **69 / 69** | – |
+| A Anzeigetafel | dark | 45 / 75 | **65 / 75** | accentText auf background, accentText auf surface, accentText auf surfaceElevated, accentText auf accentMuted, ratingInk auf ratingElite, ratingInk auf ratingExcellent, accentText auf mkInk, accent auf surface, Noten-Skala, engstes Paar (protan): Average–Good, Noten-Skala, engstes Paar (deutan): Average–Good |
+| A Anzeigetafel | light | 46 / 69 | **65 / 69** | ratingInk auf ratingElite, ratingInk auf ratingExcellent, Noten-Skala, engstes Paar (protan): Average–Good, Noten-Skala, engstes Paar (deutan): Average–Good |
 | B Messgerät | dark | 44 / 75 | **72 / 75** | mkRed auf mkInk, accent auf background, accent auf surface |
 | B Messgerät | light | 49 / 69 | **69 / 69** | – |
 | C Flutlicht | dark | 44 / 75 | **73 / 75** | mkRed auf mkInk, accent auf surface |
@@ -41,6 +41,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 - **Auf und Ab:** Aufwertung ist jetzt Türkis statt Grün und deutlich heller (Dunkel) bzw. dunkler (Hell) als Abwertung. So bleibt sie auch bei Rot-Grün-Schwäche unterscheidbar (ΔE ≥ 10). Pfeil und Vorzeichen sind trotzdem Pflicht.
 - **Liga-Akzente:** Gesucht per Rechnung über alle Farbtöne: BL Blauviolett, PL Mint, SL Flieder. Mehr als ΔE 10,8 ist mit Gold und Rot im Vergleich nicht erreichbar, deshalb Schwelle 10. Liga-Farben sind Flächen mit dunkler Schrift, keine Schriftfarben, und stehen immer neben dem Kürzel.
 - **Rot für Schlecht (nur A, Runde 4):** Burhans Wunsch: zwei echte Rottöne, kein Rosa. Note Poor ist das Rot von Sofascore (#DC0C00) mit weißer Zahl: 5,0 : 1, Lc 76. Abwertung ist das Rot der Website (#FF5260, wie heute in der App) auf dunklem Rot-Chip: 5,1 : 1, aber nur Lc 41. Das ist eine bewusste Ausnahme: WCAG hält, APCA verlangt für kleine Schrift Lc 60. Der Chip trägt deshalb immer Pfeil und Minus, fett. Im Hell-Modus bleibt Abwertung #BB081A (6,0 : 1, Lc 74).
+- **Rote Schrift (nur A, Runde 4):** accentText ist im Dark-Modus wieder das Website-Rot #FF5260 statt Rosa #FFA29F (Burhan: das Website-Rot passt). 6,1 : 1 auf dem Hintergrund, aber nur Lc 44. Rote Schrift deshalb nur halbfett ab 14 px und für kurze Wörter, nie für Fließtext.
+- **Noten-Skala (nur A, Runde 4):** Burhans Wahl: die Noten-Farben wie heute in der App (Elite #3B82F6, Excellent #18B981, Good #8BC34A, Average #F2B84B), nur Poor ist das Sofascore-Rot #DC0C00 mit weißer Zahl. Bewusste Ausnahme: Bei Rot-Grün-Schwäche liegen Good und Average dicht beieinander (Protan ΔE 1,0), und die dunkle Zahl auf Elite erreicht nur Lc 40. Die Zahl steht deshalb immer im Chip.
 - **Marketing:** Rote Wörter auf Schwarz nutzen accentText, nicht mkRed. mkRed ist nur Fläche.
 
 ## Bewusst offene Punkte in v2 (mit Regel)
@@ -75,10 +77,10 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | textMuted auf surfaceElevated | `#A7A9AE` | `#272A30` | 6,12 | -51,9 | – | ≥4,5 · Lc 45 | ✅ |
 | Text | textMuted auf surfaceHover | `#A7A9AE` | `#26282D` | 6,27 | -52,2 | – | ≥4,5 · Lc 45 | ✅ |
 | Text | textMuted auf surfaceOverlay | `#A7A9AE` | `#34373D` | 5,07 | -48,7 | – | ≥4,5 · Lc 45 | ✅ |
-| Text | accentText auf background | `#FFA29F` | `#0D0F14` | 9,97 | -65,5 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | accentText auf surface | `#FFA29F` | `#1D1F24` | 8,57 | -63,9 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | accentText auf surfaceElevated | `#FFA29F` | `#272A30` | 7,48 | -62,1 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | accentText auf accentMuted | `#FFA29F` | `#401011` | 8,40 | -63,2 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | accentText auf background | `#FF5260` | `#0D0F14` | 6,05 | -43,7 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | accentText auf surface | `#FF5260` | `#1D1F24` | 5,20 | -42,1 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | accentText auf surfaceElevated | `#FF5260` | `#272A30` | 4,54 | -40,3 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | accentText auf accentMuted | `#FF5260` | `#401011` | 5,10 | -41,5 | – | ≥4,5 · Lc 60 | ❌ |
 | Text | ratingUp auf background | `#5EF9F1` | `#0D0F14` | 14,88 | -89,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf surface | `#5EF9F1` | `#1D1F24` | 12,79 | -87,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf positiveMuted | `#5EF9F1` | `#002F2D` | 11,28 | -86,0 | – | ≥4,5 · Lc 60 | ✅ |
@@ -87,10 +89,10 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | goldText auf surface | `#F2BF47` | `#1D1F24` | 9,67 | -70,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#F2BF47` | `#392C0C` | 8,00 | -67,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Button-Text | onAccent auf accent | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingElite | `#0D0F14` | `#85BAFF` | 9,55 | 64,6 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingExcellent | `#0D0F14` | `#9EFFFE` | 16,60 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingGood | `#0D0F14` | `#D6FC91` | 16,61 | 95,8 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingAverage | `#0D0F14` | `#F8A052` | 9,26 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | ratingInk auf ratingElite | `#0D0F14` | `#3B82F6` | 5,21 | 39,7 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | ratingInk auf ratingExcellent | `#0D0F14` | `#18B981` | 7,57 | 54,4 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | ratingInk auf ratingGood | `#0D0F14` | `#8BC34A` | 9,13 | 62,5 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | ratingInk auf ratingAverage | `#0D0F14` | `#F2B84B` | 10,71 | 70,4 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DC0C00` | 5,00 | -76,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0D0F14` | `#9CACFF` | 8,91 | 61,2 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0D0F14` | `#9DFFB2` | 15,86 | 93,0 | – | ≥4,5 · Lc 60 | ✅ |
@@ -99,7 +101,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Schlagzeile | onMkRedLarge auf mkRed | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥3,0 · Lc 45 | ✅ |
 | Text | mkPaper auf mkInk | `#F4F5F8` | `#0D0F14` | 17,58 | -100,9 | – | ≥4,5 · Lc 75 | ✅ |
 | Nicht-Text | mkRed auf mkInk | `#E31D29` | `#0D0F14` | 4,08 | -30,9 | – | ≥3,0 · Lc 30 | ✅ |
-| Text | accentText auf mkInk | `#FFA29F` | `#0D0F14` | 9,97 | -65,5 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | accentText auf mkInk | `#FF5260` | `#0D0F14` | 6,05 | -43,7 | – | ≥4,5 · Lc 60 | ❌ |
 | Nicht-Text | borderStrong auf surface | `#808389` | `#1D1F24` | 4,34 | -34,1 | – | ≥3,0 · Lc 30 | ✅ |
 | Nicht-Text | focusRing auf background | `#E4E8EF` | `#0D0F14` | 15,60 | -92,3 | – | ≥3,0 · Lc 30 | ✅ |
 | Nicht-Text | focusRing auf surface | `#E4E8EF` | `#1D1F24` | 13,42 | -90,7 | – | ≥3,0 · Lc 30 | ✅ |
@@ -118,16 +120,16 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Stufe | surface → surfaceSelected | `#44211F` | `#1D1F24` | 1,16 | – | 5,6 | ΔL ≥3 | ✅ deutlich |
 | Stufe | surface → surfaceDisabled | `#14161A` | `#1D1F24` | 1,10 | – | 4,0 | ΔL ≥3 | ✅ sichtbar |
 | Farbschwäche | Auf ↔ Ab (normal) | `#5EF9F1` | `#FF5260` | – | – | 40,1 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 13,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 10,3 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (normal): BL–SL | – | – | – | – | 13,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (protan) | `#EBEDF1` | `#80795F` | – | – | 37,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (protan): Good–Excellent | – | – | – | – | 13,9 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (protan): Average–Good | – | – | – | – | 1,0 | ΔE ≥8 | ❌ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (protan): BL–SL | – | – | – | – | 11,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (deutan) | `#D4DBF2` | `#AC9E5B` | – | – | 23,1 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (deutan): Good–Excellent | – | – | – | – | 14,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (deutan): Average–Good | – | – | – | – | 7,2 | ΔE ≥8 | ❌ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold | – | – | – | – | 11,6 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (tritan) | `#00FFF6` | `#FF2458` | – | – | 47,4 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (tritan): Good–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (tritan): Excellent–Elite | – | – | – | – | 8,4 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (tritan): SL–Gold | – | – | – | – | 10,8 | ΔE ≥10 | ✅ |
 | OLED | background #0D0F14 (R13 G15 B20) | – | `#0D0F14` | – | – | – | kein Kanal unter 12 | ✅ |
 
@@ -167,10 +169,10 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | goldText auf surface | `#845500` | `#F2F4F7` | 5,81 | 74,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#845500` | `#F7E5B9` | 5,14 | 66,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Button-Text | onAccent auf accent | `#FCFCFC` | `#DB1B26` | 4,88 | -75,9 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingElite | `#0C0E13` | `#85BAFF` | 9,62 | 64,7 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingExcellent | `#0C0E13` | `#9EFFFE` | 16,72 | 96,0 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingGood | `#0C0E13` | `#D6FC91` | 16,72 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingAverage | `#0C0E13` | `#F8A052` | 9,32 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | ratingInk auf ratingElite | `#0C0E13` | `#3B82F6` | 5,25 | 39,7 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | ratingInk auf ratingExcellent | `#0C0E13` | `#18B981` | 7,63 | 54,5 | – | ≥4,5 · Lc 60 | ❌ |
+| Text | ratingInk auf ratingGood | `#0C0E13` | `#8BC34A` | 9,19 | 62,6 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | ratingInk auf ratingAverage | `#0C0E13` | `#F2B84B` | 10,79 | 70,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DC0C00` | 5,00 | -76,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0C0E13` | `#9CACFF` | 8,97 | 61,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0C0E13` | `#9DFFB2` | 15,98 | 93,1 | – | ≥4,5 · Lc 60 | ✅ |
@@ -193,16 +195,16 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Stufe | surface → surfaceSelected | `#FFDDDA` | `#F2F4F7` | 1,15 | – | 4,2 | ΔL ≥3 | ✅ deutlich |
 | Stufe | surface → surfaceDisabled | `#E6E8EB` | `#F2F4F7` | 1,11 | – | 3,6 | ΔL ≥3 | ✅ sichtbar |
 | Farbschwäche | Auf ↔ Ab (normal) | `#005763` | `#BB081A` | – | – | 28,5 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 13,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 10,3 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (normal): BL–SL | – | – | – | – | 13,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (protan) | `#4D5364` | `#4E4517` | – | – | 10,8 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (protan): Good–Excellent | – | – | – | – | 13,9 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (protan): Average–Good | – | – | – | – | 1,0 | ΔE ≥8 | ❌ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (protan): BL–SL | – | – | – | – | 11,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (deutan) | `#414B63` | `#76690E` | – | – | 17,8 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (deutan): Good–Excellent | – | – | – | – | 14,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (deutan): Average–Good | – | – | – | – | 7,2 | ΔE ≥8 | ❌ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–SL | – | – | – | – | 13,0 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (tritan) | `#005C5B` | `#CF0014` | – | – | 31,0 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (tritan): Good–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (tritan): Excellent–Elite | – | – | – | – | 8,4 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (tritan): PL–SL | – | – | – | – | 12,1 | ΔE ≥10 | ✅ |
 
 ### v1 (zum Vergleich): durchgefallen

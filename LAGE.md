@@ -18,6 +18,6 @@ Stand: 05.11.2026 · zuletzt geändert von: Marketing-Chat (mit Burhan)
 
 ## Was wartet
 
-- Designsystem: Burhan hat Option A gewählt (05.11.). Rottöne und TOTW sind angepasst. Offen sind Burhans Feedback dazu, ein eigener Logo-Termin und später der Aufbau der Seiten.
+- Designsystem: Burhan hat Option A gewählt (05.11.). Die Übergabe für den Website-Builder ist fertig (Zip in OneDrive). Offen sind ein eigener Logo-Termin und später der Aufbau der Seiten.
 - Messung, welches Konto Wartelisten-Anmeldungen bringt: noch nicht möglich, Prüfauftrag liegt im FootPulse-Code-Repo.
 - Hasan kommt später dazu.

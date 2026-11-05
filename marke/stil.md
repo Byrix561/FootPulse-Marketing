@@ -1,6 +1,6 @@
 # Markenstil FootPulse
 
-> **Stand 05.11.2026.** Das Designsystem 2026 liegt in drei vollständigen Optionen vor (`marke/designsystem/`). **Die Regeln in Abschnitt 1 bis 4 gelten ab sofort**, egal welche Option kommt. **Palette, Schrift und Logo sind noch offen.** Burhan wählt oder mischt (`marke/designsystem/entscheidung.md`). Bis dahin gelten für Posts weiter die bisherigen Farben und Barlow Condensed. Wer schon vorproduziert, nutzt Option A (Empfehlung).
+> **Stand 05.11.2026.** Burhan hat **Option A „Anzeigetafel“** gewählt (`marke/designsystem/entscheidung.md`). Es gelten die Werte aus `marke/designsystem/option-a-anzeigetafel/tokens.json`. Die Noten-Farben sind die heutigen App-Farben, nur Poor ist Sofascore-Rot (#DC0C00). Rote Schrift und Abwertung sind das Website-Rot #FF5260. Das Team der Woche bleibt im Aufbau, wie es ist. Das Logo bleibt vorerst das heutige, ein eigener Logo-Termin folgt.
 
 ## 1. Markenkern
 
@@ -20,12 +20,12 @@
 
 ## 3. Regeln für Farbe (gelten für jede Option)
 
-- Rot heißt Zustand oder Aktion. Rote Flächen mindestens 8 px, Linien mindestens 2 px. Rote Schrift in `accentText`.
+- Rot heißt Zustand oder Aktion. Rote Flächen mindestens 8 px, Linien mindestens 2 px. Rote Schrift in `accentText`, nur halbfett ab 14 px und in kurzen Wörtern.
 - Gold nur für Verdientes: MVP im Team der Woche, Rang 1.
 - **Auf und Ab nie nur über Farbe.** Immer ▲ mit +, ▼ mit −, ■ für unverändert.
 - Noten-Chips zeigen immer die Zahl.
 - Jede Flächenstufe ist mindestens ΔL 3 von der nächsten entfernt. Keine Verläufe und kein Blur in der App.
-- Jeder lesbare Text erreicht WCAG 4,5 : 1 und APCA Lc 60 (Fließtext Lc 75).
+- Jeder lesbare Text erreicht WCAG 4,5 : 1. Ziel ist zusätzlich APCA Lc 60 (Fließtext Lc 75). Bewusste Ausnahmen sind das Website-Rot als Schrift und die Noten-Chips (siehe `designsystem/entscheidung.md`).
 - Auf Rot steht das Logo nur einfarbig weiß.
 - Liga-Konten bekommen einen eigenen Akzent als Fläche mit Kürzel (BL, PL, SL). Keine Flaggen, keine echten Liga-Logos, keine Liga-Farben.
 
@@ -37,7 +37,7 @@
 - Untertitel: höchstens 2 Zeilen und 42 Zeichen je Zeile, Schlüsselwort in Rot.
 - Fotos nur frei lizenziert oder mit Rechten (`rechte/`). Keine Vereinswappen ohne Rechte, keine KI-Gesichter echter Spieler.
 
-## 5. Die drei Optionen (Entscheidung offen)
+## 5. Die drei Optionen (entschieden: A)
 
 | | A · Anzeigetafel (Empfehlung) | B · Messgerät | C · Flutlicht |
 |---|---|---|---|
@@ -51,3 +51,4 @@
 |---|---|---|
 | 19.10.2026 | Entwurf beim Aufbau des Repos | Aufbau-Chat |
 | 05.11.2026 | Gemeinsame Regeln aus dem Designsystem 2026 übernommen, drei Optionen verlinkt, Entscheidung offen | Marketing-Chat mit Burhan |
+| 05.11.2026 | Option A gewählt. Noten-Farben wie heute in der App (Poor = Sofascore-Rot), rote Schrift = Website-Rot, TOTW-Aufbau bleibt | Marketing-Chat mit Burhan |

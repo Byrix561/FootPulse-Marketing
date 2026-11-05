@@ -6,10 +6,14 @@ Für: Burhan · Stand: 05.11.2026 · Vorbereitet vom Marketing-Chat
 
 Burhan wählt **Option A „Anzeigetafel“**, mit diesen Änderungen:
 
-- **Rot für Schlecht (zweite Fassung):** Zwei verschiedene Rottöne, kein Rosa. Die Note Poor (z. B. 4,8) ist das Rot von Sofascore (#DC0C00) mit weißer Zahl: 5,0 : 1, Lc 76. Die Abwertung ist das Rot der Website (#FF5260, wie heute in der App) auf dunklem Rot-Chip: 5,1 : 1, aber nur Lc 41. Das ist eine bewusste Ausnahme, der Chip trägt immer ▼ und Minus. Im Hell-Modus bleibt die Abwertung #BB081A. A Dark 74/75, A Light 69/69. Erledigt.
-- **Logo:** Vorerst bleiben das heutige Logo und das A-Logo. Ein eigener Termin nur für das Logo folgt.
-- **Team der Woche:** Nach Burhans Screenshot neu gebaut, nah am heutigen TOTW: Karte mit Position, NOW-Wert in Gold, rundem Foto, Name, Tor- oder Vorlagen-Chip und Noten-Chip, MVP mit Krone, Summenzeile darunter. Aus A kommen nur Farben, Schriften und die schräge Ecke. Baustein: `_werkzeug/totw.py`. Fotos sind noch Platzhalter (Initialen).
+- **Noten-Farben (Rating):** Es gelten die **heutigen App-Farben**: Elite #3B82F6, Excellent #18B981, Good #8BC34A, Average #F2B84B, jeweils mit dunkler Zahl. Nur **Poor** ist das Rot von Sofascore (#DC0C00) mit weißer Zahl (5,0 : 1, Lc 76). Die A-Skala (Blau, Türkis, Hellgrün, Orange) ist damit verworfen. Bewusste Ausnahme: Bei Rot-Grün-Schwäche liegen Good und Average dicht beieinander (Protan ΔE 1,0), und die dunkle Zahl auf Elite erreicht nur Lc 40. Deshalb steht die Zahl immer im Chip.
+- **Rot:** Abwertung und rote Schrift sind im Dark-Modus das **Website-Rot #FF5260** (wie heute). Es hat 6,1 : 1 auf dem Hintergrund, aber nur Lc 44. Rote Schrift steht deshalb nur halbfett ab 14 px und in kurzen Wörtern. Das Rosa aus A (#FFA29F) ist verworfen. Abwertung und Note Poor sind bewusst zwei verschiedene Rottöne. Im Hell-Modus bleibt rote Schrift #BB081A.
+- **Messung A:** Dark 65/75, Light 65/69. Jeder Text besteht WCAG AA. Alle Ausnahmen betreffen nur den strengeren APCA-Test oder die Farbschwäche-Simulation und folgen aus den zwei Punkten oben.
+- **Team der Woche:** Das TOTW in App und Website **bleibt im Aufbau, wie es ist**. Übernommen werden dort nur die Farben. Das TOTW in den Testseiten und Beispielen ist nur eine Farbprobe und soll nicht nachgebaut werden.
+- **Beispiele:** Die Beispielseiten zeigen Farbe und Stil, nicht den Aufbau.
 - **Aufbau der Seiten:** Den will Burhan später ändern. Karten und Symbole bleiben, wie sie in A sind.
+- **Logo:** Vorerst bleibt das heutige Logo, das A-Logo liegt als Vorschlag bereit. Ein eigener Termin nur für das Logo folgt.
+- **Übergabe an den Website-Builder:** `marke/designsystem/uebergabe-website/` (neu bauen mit `_werkzeug/uebergabe.py`). Fertig gepackt mit Vorschaubildern und heutigem Logo liegt sie in OneDrive: `00 Marke/Designsystem 2026/FootPulse_Designsystem_Website_Uebergabe.zip`.
 
 Es gibt drei vollständige Optionen. Jede hat Farben für Dark und Light, eine Marketing-Erweiterung, Liga-Akzente, Schrift, Logo-System, Formensprache, Bausteine und Vorlagen. Alle drei nutzen dieselben Rollennamen wie die App. Deshalb lassen sie sich auch **mischen**.
 

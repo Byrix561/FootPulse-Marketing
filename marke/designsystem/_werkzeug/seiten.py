@@ -293,14 +293,14 @@ body{margin:0;background:var(--background);color:var(--textPrimary);font-family:
 <span class="lg" style="background:var(--leagueBL)">BL</span><span class="lg" style="background:var(--leaguePL)">PL</span><span class="lg" style="background:var(--leagueSL)">SL</span></div>
 </section>
 
-<section class="blk" id="t-totw"><span class="label cap">Team der Woche · 4-3-3</span>
+<section class="blk" id="t-totw"><span class="label cap">Team der Woche · 4-3-3{" · nur Farbprobe, Aufbau bleibt wie in der App" if r == "A" else ""}</span>
 {XI.app_block(10) if r == "A" else '<div class="pitch"><span class="box1"></span><span class="box2"></span>' + totw + '</div>'}
 </section>
 
 <section class="blk" id="t-warteliste"><span class="label cap">Wartelisten-Seite (Handy)</span>
 <div class="wait">
 <img src="{ld}" class="logo-d" alt="FootPulse"><img src="{lh}" class="logo-l" alt="FootPulse">
-<div class="status"><span class="chip up"><b>●</b> Süper Lig live</span><span class="chip flat">Premier League bald</span><span class="chip flat">Bundesliga bald</span></div>
+<div class="status"><span class="chip up"><b>●</b> Süper Lig verfügbar</span><span class="chip flat">Premier League bald</span><span class="chip flat">Bundesliga bald</span></div>
 <h2 class="h">Jede Zahl hat einen Grund.</h2>
 <p>FootPulse bewertet Spieler nach dem, was auf dem Platz passiert, und erklärt nach jedem Spieltag, warum sich ein Wert bewegt.</p>
 <label class="field"><span>E-Mail</span><input class="input focus" value="kaan@" aria-label="E-Mail"></label>

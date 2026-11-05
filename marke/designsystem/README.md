@@ -8,6 +8,7 @@ Hier liegt das komplette Designsystem von FootPulse in drei Optionen. Jede Optio
 |---|---|
 | [kurzbericht.md](kurzbericht.md) | Das Wichtigste auf einer Seite |
 | [entscheidung.md](entscheidung.md) | Vergleich, Mischregeln, Empfehlung, offene Fragen |
+| [uebergabe-website/](uebergabe-website/LIESMICH.md) | Fertige Übergabe für den Website-Builder (Option A, finale Werte) |
 | [testmatrix.md](testmatrix.md) | Farbtests mit Zahlen: WCAG, APCA, Farbschwäche, Flächenstufen, v1 und v2 |
 | [testmatrix-bild.md](testmatrix-bild.md) | Tests auf den Screenshots: Flächenstufen im Bild, Wirkung im Feed |
 | [fuer-supervisor.md](fuer-supervisor.md) | Absatz für den Supervisor (App-Umbau als Vorschlag) |
