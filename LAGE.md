@@ -8,6 +8,7 @@ Stand: 05.11.2026 · zuletzt geändert von: Marketing-Chat (mit Burhan)
 - Phase jetzt (bis zur Beta): Reichweite aufbauen, nebenbei testen, was als Werbung funktioniert, und die Warteliste füllen.
 - Strategie: Qualität statt Menge. Hochwertige Bilder und Videos, die Geschichten erzählen.
 - Designsystem 2026: drei vollständige Optionen liegen vor (`marke/designsystem/`). Gemeinsame Regeln gelten schon (`marke/stil.md`).
+- Website-Umbau auf Option A hat begonnen. Änderungen an Farben, Schrift oder Formen zwischen Marketing und Website stehen ab jetzt nur in `marke/designsystem/abgleich-website.md`.
 
 ## Was als Nächstes kommt
 
