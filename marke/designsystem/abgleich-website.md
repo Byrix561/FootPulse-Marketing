@@ -36,10 +36,51 @@ Marketing und Website nutzen dieselben Farben, Schriften und Formen. Ändert ein
 
 ## Einträge
 
+### AB-20261105-02 · Website-Builder · Option A, Schritt 0
+
+| Rolle | Vorher | Jetzt |
+| --- | --- | --- |
+| `background` | `#050507` | `#0D0F14` |
+| `surfaceSunken` | `#09090D` | `#06080C` |
+| `surface` | `#111116` | `#1D1F24` |
+| `surfaceElevated` | `#191920` | `#272A30` |
+| `surfaceOverlay` | `#24242D` | `#34373D` |
+| `surfaceWarm` | `#151014` | `#352222` |
+| `surfaceDeep` | `#0C0C11` | `#15171C` |
+| `borderSubtle` | `#1D1D24` | `#2E3036` |
+| `border` | `#2A2A34` | `#404248` |
+| `borderStrong` | `#3D3D49` | `#808389` |
+| `textPrimary` | `#F2F2F5` | `#F2F3F6` |
+| `textSecondary` | `#ABABB6` | `#CDCFD5` |
+| `textTertiary` | `#93939F` | `#C0C2C8` |
+| `textMuted` | `#82828E` | `#A7A9AE` |
+| `textFaint` | `#666672` | `#7B7D82` |
+| `accent` | `#F02D3A` | `#E31D29` |
+| `accentDim` | `#9F1D28` | `#A32224` |
+| `accentMuted` | `#381015` | `#401011` |
+| `gold` | `#F1C15B` | `#F2BF47` |
+| `goldMuted` | `#302613` | `#392C0C` |
+| `pitchGreen` | `#0B251B` | `#0F2D1F` |
+| `pitchLine` | `#285442` | `#2D5742` |
+| `ratingUp` | `#2ECC71` | `#5EF9F1` |
+| `positiveMuted` | `#0D2618` | `#002F2D` |
+| `ratingInk` | `#07100B` | `#0D0F14` |
+
+Neue Rollen aus der Übergabe: `tabTrack #15171C`, `tabActive #34373D`, `surfaceHover #26282D`, `surfacePressed #2F3237`, `surfaceSelected #44211F`, `surfaceDisabled #14161A`, `textDisabled #6D6F71`, `focusRing #E4E8EF`, `onAccent #FCFCFC`, `goldText #F2BF47`, `leagueBL #9CACFF`, `leaguePL #9DFFB2`, `leagueSL #DECEFF`. Poor erhält abweichend die dunkle Ziffer `onRatingPoor #0D0F14`. Die Kartenrollen verwenden separat die bisherigen Werte. Die Vereins- und Ausweichfarben sind zentralisiert. Bisher lokal gesetzte Töne beziehen sich auf die zentralen Flächen-, Rot-, Gold- und Spielfeldrollen.
+
+Barlow 400/500/600 kommt als Textschrift hinzu, Barlow Condensed bleibt für Überschriften, Zahlen und das Logo. Barlow Condensed 800, die Typostufen der Übergabe und Schnitte 8/14/28 px liegen als Rollen vor. Radius xs ist neu mit 2 px, sm bleibt 4 px, md wechselt 8 → 6 px und lg 14 → 8 px. Die bisherigen xl/xxl-Aliasse gehen im allgemeinen Rahmen auf 8 px. Die TOTW-spezifischen Radien und Schriftzuschnitte behalten ihre Werte.
+
+Für Marketing gilt die entschiedene dunkle Poor-Ziffer. Türkis ist der aktuelle Prüfstand. Der lokale Vergleich zeigt auch Grün `#2ECC71 / #0D2618`.
+
+Status: offen (Entscheidung über die Aufwertungsfarbe)
+
+
 ### AB-20261105-01 · Website-Supervisor · Start des Website-Umbaus mit Option A
 
 Die Website wird jetzt Tab für Tab auf Option A „Anzeigetafel“ umgebaut. Codex baut, Claude prüft, und jeder fertige Tab geht einzeln live. Grundlage ist `uebergabe-website/` mit Stand 05.11.2026. Burhan hat dazu gesagt: Die Töne sind ein Vorschlag, kein Muss. Wo die heutigen Website-Werte besser sind, bleiben sie, zum Beispiel bei den Notenfarben (Tabelle oben). Weitere Abweichungen trägt die Website hier ein, sobald Burhan sie entschieden hat.
 
 Für Marketing: Für Noten-Chips in Posts bitte die Werte aus der Tabelle oben nehmen, nicht `#DC0C00`. Ob die Zahl auf „Poor“ dann dunkel oder weiß steht, rechnet die Website beim Bau nach und schreibt es hier dazu.
 
-Status: offen (Zahlfarbe auf Poor)
+→ Antwort (Website-Builder, 05.11.2026): #0D0F14 auf #EF5B5B erreicht 5,77:1. Die Zahl wird dunkel gesetzt.
+
+Status: erledigt (05.11.2026, Website-Builder)
