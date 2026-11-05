@@ -42,6 +42,7 @@
   --onAccent: #FCFCFC;
   --goldText: #F1BE3D;
   --ratingInk: #140F0E;
+  --onRatingPoor: #140F0E;
   --mkRed: #D71712;
   --mkRedDeep: #8A0605;
   --mkInk: #140F0E;
@@ -51,6 +52,8 @@
   --leagueBL: #9CACFF;
   --leaguePL: #9DFFB2;
   --leagueSL: #DECEFF;
+  --downChipBg: var(--accentMuted);
+  --downChipFg: var(--ratingDown);
 }
 [data-theme="light"] {
   --background: #E3DDD2;
@@ -95,6 +98,7 @@
   --onAccent: #FCFCFC;
   --goldText: #845500;
   --ratingInk: #100B09;
+  --onRatingPoor: #100B09;
   --mkRed: #D71712;
   --mkRedDeep: #8A0605;
   --mkInk: #140F0E;
@@ -104,6 +108,8 @@
   --leagueBL: #9CACFF;
   --leaguePL: #9DFFB2;
   --leagueSL: #DECEFF;
+  --downChipBg: var(--accentMuted);
+  --downChipFg: var(--ratingDown);
 }
 :root {
   --font-display: 'Big Shoulders Display', Impact, sans-serif;

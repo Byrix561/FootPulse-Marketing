@@ -19,7 +19,7 @@ ROLLEN_APP = [
 # Neue Rollen (Vorschlag, für Burhans Kritik an Tabs und Zuständen)
 ROLLEN_NEU = [
     "tabTrack", "tabActive", "surfaceHover", "surfacePressed", "surfaceSelected", "surfaceDisabled",
-    "textDisabled", "focusRing", "onAccent", "goldText", "ratingInk",
+    "textDisabled", "focusRing", "onAccent", "goldText", "ratingInk", "onRatingPoor",
 ]
 ROLLEN_MARKETING = ["mkRed", "mkRedDeep", "mkInk", "mkPaper", "onMkRed", "onMkRedLarge"]
 ROLLEN_LIGA = ["leagueBL", "leaguePL", "leagueSL"]
@@ -151,7 +151,7 @@ def aufloesen(spec_by_theme, richtung):
         spec = spec_by_theme[theme]
         res = {}
         def val(rolle, seen=()):
-            v = spec[rolle]
+            v = spec.get(rolle, "=ratingInk" if rolle == "onRatingPoor" else None)
             if isinstance(v, tuple):
                 return oklch_to_hex(v[1], v[2], v[3])
             if isinstance(v, str) and v.startswith("=") and v.endswith("_DARK"):

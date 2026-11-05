@@ -31,7 +31,7 @@ ZWECK = {
     "tabTrack": "NEU: Spur der Tab-Leiste", "tabActive": "NEU: Fläche des aktiven Tabs", "surfaceHover": "NEU: Hover auf Fläche",
     "surfacePressed": "NEU: Gedrückt / aktiv", "surfaceSelected": "NEU: Ausgewählte Zeile oder Karte", "surfaceDisabled": "NEU: Deaktivierte Fläche",
     "textDisabled": "NEU: Deaktivierter Text (keine Kontrastpflicht)", "focusRing": "NEU: Fokusrahmen 2 px, 2 px Abstand", "onAccent": "NEU: Schrift auf Rot",
-    "goldText": "NEU: Gold als Schrift (im Hell-Modus dunkler)", "ratingInk": "NEU: Zahl auf Noten- und Liga-Flächen",
+    "goldText": "NEU: Gold als Schrift (im Hell-Modus dunkler)", "ratingInk": "NEU: Zahl auf Noten- und Liga-Flächen", "onRatingPoor": "NEU: Zahl auf der Note Poor (A: weiß auf Rot)",
     "mkRed": "Marketing: rote Vollfläche", "mkRedDeep": "Marketing: zweites Rot für Tiefe, Streifen", "mkInk": "Marketing: Schwarz",
     "mkPaper": "Marketing: Weiß / Kreide", "onMkRed": "Marketing: kleine Schrift auf Rot", "onMkRedLarge": "Marketing: Schlagzeile auf Rot",
     "leagueBL": "Akzent Bundesliga-Konto (Fläche)", "leaguePL": "Akzent Premier-League-Konto (Fläche)", "leagueSL": "Akzent Süper-Lig-Konto (Fläche)",
@@ -79,6 +79,9 @@ def tokens_css(r, p):
         lines.append(sel + " {")
         for k in ALLE:
             lines.append(f"  --{k}: {p[theme][k]};")
+        voll = p[theme]["ratingPoor"] == p[theme]["accent"]  # A ab Runde 4: Abwertungs-Chip als rote Fläche
+        lines.append(f"  --downChipBg: var(--{'accent' if voll else 'accentMuted'});")
+        lines.append(f"  --downChipFg: var(--{'onAccent' if voll else 'ratingDown'});")
         lines.append("}")
     s = O.SCHRIFT[r]
     lines.append(":root {")

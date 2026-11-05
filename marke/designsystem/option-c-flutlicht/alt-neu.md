@@ -51,6 +51,7 @@ Stand 04.11.2026. Vorlage für den App-Umbau: Jede Zeile ist ein Austausch in de
 | `onAccent` | NEU: Schrift auf Rot | `#FCFCFC` | `#FCFCFC` |
 | `goldText` | NEU: Gold als Schrift (im Hell-Modus dunkler) | `#F1BE3D` | `#845500` |
 | `ratingInk` | NEU: Zahl auf Noten- und Liga-Flächen | `#140F0E` | `#100B09` |
+| `onRatingPoor` | NEU: Zahl auf der Note Poor (A: weiß auf Rot) | `#140F0E` | `#100B09` |
 
 ## Marketing und Liga (beide Modi)
 

@@ -25,8 +25,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 
 | Option | Modus | v1 bestanden | v2 bestanden | offen in v2 |
 |---|---|---|---|---|
-| A Anzeigetafel | dark | 45 / 75 | **74 / 75** | accent auf surface |
-| A Anzeigetafel | light | 46 / 69 | **69 / 69** | – |
+| A Anzeigetafel | dark | 45 / 75 | **75 / 76** | accent auf surface |
+| A Anzeigetafel | light | 46 / 69 | **70 / 70** | – |
 | B Messgerät | dark | 44 / 75 | **72 / 75** | mkRed auf mkInk, accent auf background, accent auf surface |
 | B Messgerät | light | 49 / 69 | **69 / 69** | – |
 | C Flutlicht | dark | 44 / 75 | **73 / 75** | mkRed auf mkInk, accent auf surface |
@@ -40,6 +40,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 - **Noten-Skala:** Per Rechnung über 60 000 Kombinationen gesucht: Jedes Paar der fünf Stufen hat jetzt in allen vier Sehweisen ΔE ≥ 9,8 (v1: 2,1). Dafür ist die Helligkeit nicht mehr stufenweise ansteigend. Die Zahl steht deshalb immer im Chip.
 - **Auf und Ab:** Aufwertung ist jetzt Türkis statt Grün und deutlich heller (Dunkel) bzw. dunkler (Hell) als Abwertung. So bleibt sie auch bei Rot-Grün-Schwäche unterscheidbar (ΔE ≥ 10). Pfeil und Vorzeichen sind trotzdem Pflicht.
 - **Liga-Akzente:** Gesucht per Rechnung über alle Farbtöne: BL Blauviolett, PL Mint, SL Flieder. Mehr als ΔE 10,8 ist mit Gold und Rot im Vergleich nicht erreichbar, deshalb Schwelle 10. Liga-Farben sind Flächen mit dunkler Schrift, keine Schriftfarben, und stehen immer neben dem Kürzel.
+- **Rot für Schlecht (nur A, Runde 4):** Burhans Wunsch: Note Poor und Abwertung sind ein echtes Rot, kein Rosa. Note Poor ist jetzt die Button-Fläche (#E31D29) mit weißer Zahl. Abwertung als Schrift ist #FE423D (WCAG 5,5 : 1, APCA Lc 41) und gilt nur für große Zahlen ab 32 px und Symbole. Der Abwertungs-Chip ist eine rote Fläche mit weißer Schrift (Lc 74).
 - **Marketing:** Rote Wörter auf Schwarz nutzen accentText, nicht mkRed. mkRed ist nur Fläche.
 
 ## Bewusst offene Punkte in v2 (mit Regel)
@@ -81,7 +82,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingUp auf background | `#5EF9F1` | `#0D0F14` | 14,88 | -89,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf surface | `#5EF9F1` | `#1D1F24` | 12,79 | -87,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf positiveMuted | `#5EF9F1` | `#002F2D` | 11,28 | -86,0 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingDown auf accentMuted | `#FFA29F` | `#401011` | 8,40 | -63,2 | – | ≥4,5 · Lc 60 | ✅ |
+| Großtext | ratingDown auf background | `#FE423D` | `#0D0F14` | 5,53 | -40,7 | – | ≥3,0 · Lc 40 | ✅ |
+| Abwertungs-Chip | onAccent auf accent | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf background | `#F2BF47` | `#0D0F14` | 11,24 | -72,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf surface | `#F2BF47` | `#1D1F24` | 9,67 | -70,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#F2BF47` | `#392C0C` | 8,00 | -67,8 | – | ≥4,5 · Lc 60 | ✅ |
@@ -90,7 +92,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#0D0F14` | `#9EFFFE` | 16,60 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#0D0F14` | `#D6FC91` | 16,61 | 95,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#0D0F14` | `#F8A052` | 9,26 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#0D0F14` | `#FFBFB6` | 12,21 | 77,3 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#E31D29` | 4,58 | -73,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0D0F14` | `#9CACFF` | 8,91 | 61,2 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0D0F14` | `#9DFFB2` | 15,86 | 93,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#0D0F14` | `#DECEFF` | 13,12 | 81,3 | – | ≥4,5 · Lc 60 | ✅ |
@@ -116,17 +118,17 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Stufe | surfaceHover → surfacePressed | `#2F3237` | `#26282D` | 1,15 | – | 3,9 | ΔL ≥3 | ✅ sichtbar |
 | Stufe | surface → surfaceSelected | `#44211F` | `#1D1F24` | 1,16 | – | 5,6 | ΔL ≥3 | ✅ deutlich |
 | Stufe | surface → surfaceDisabled | `#14161A` | `#1D1F24` | 1,10 | – | 4,0 | ΔL ≥3 | ✅ sichtbar |
-| Farbschwäche | Auf ↔ Ab (normal) | `#5EF9F1` | `#FFA29F` | – | – | 25,8 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (normal): Poor–Average | – | – | – | – | 11,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Auf ↔ Ab (normal) | `#5EF9F1` | `#FE423D` | – | – | 42,5 | ΔE ≥10 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 13,8 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (normal): BL–SL | – | – | – | – | 13,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (protan) | `#EBEDF1` | `#B5B09E` | – | – | 19,2 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (protan): Poor–Elite | – | – | – | – | 12,6 | ΔE ≥8 | ✅ |
+| Farbschwäche | Auf ↔ Ab (protan) | `#EBEDF1` | `#7B703A` | – | – | 41,1 | ΔE ≥10 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (protan): Good–Excellent | – | – | – | – | 13,9 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (protan): BL–SL | – | – | – | – | 11,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (deutan) | `#D4DBF2` | `#CBC29E` | – | – | 11,5 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (deutan): Poor–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Auf ↔ Ab (deutan) | `#D4DBF2` | `#AA9935` | – | – | 26,2 | ΔE ≥10 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (deutan): Good–Excellent | – | – | – | – | 14,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold | – | – | – | – | 11,6 | ΔE ≥10 | ✅ |
-| Farbschwäche | Auf ↔ Ab (tritan) | `#00FFF6` | `#FF97A2` | – | – | 30,3 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (tritan): Poor–Average | – | – | – | – | 9,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Auf ↔ Ab (tritan) | `#00FFF6` | `#FF0043` | – | – | 48,9 | ΔE ≥10 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (tritan): Good–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (tritan): SL–Gold | – | – | – | – | 10,8 | ΔE ≥10 | ✅ |
 | OLED | background #0D0F14 (R13 G15 B20) | – | `#0D0F14` | – | – | – | kein Kanal unter 12 | ✅ |
 
@@ -161,7 +163,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingUp auf background | `#005763` | `#DBDEE3` | 6,12 | 68,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf surface | `#005763` | `#F2F4F7` | 7,49 | 81,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingUp auf positiveMuted | `#005763` | `#CBECF2` | 6,61 | 73,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingDown auf accentMuted | `#BB081A` | `#FFDDDA` | 5,25 | 64,8 | – | ≥4,5 · Lc 60 | ✅ |
+| Großtext | ratingDown auf background | `#BB081A` | `#DBDEE3` | 4,92 | 60,8 | – | ≥3,0 · Lc 40 | ✅ |
+| Abwertungs-Chip | onAccent auf accent | `#FCFCFC` | `#DB1B26` | 4,88 | -75,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf background | `#845500` | `#DBDEE3` | 4,75 | 62,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf surface | `#845500` | `#F2F4F7` | 5,81 | 74,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | goldText auf goldMuted | `#845500` | `#F7E5B9` | 5,14 | 66,9 | – | ≥4,5 · Lc 60 | ✅ |
@@ -170,7 +173,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#0C0E13` | `#9EFFFE` | 16,72 | 96,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#0C0E13` | `#D6FC91` | 16,72 | 95,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#0C0E13` | `#F8A052` | 9,32 | 63,3 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#0C0E13` | `#FFBFB6` | 12,30 | 77,4 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#FCFCFC` | `#DB1B26` | 4,88 | -75,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#0C0E13` | `#9CACFF` | 8,97 | 61,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#0C0E13` | `#9DFFB2` | 15,98 | 93,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#0C0E13` | `#DECEFF` | 13,22 | 81,4 | – | ≥4,5 · Lc 60 | ✅ |
@@ -192,22 +195,22 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Stufe | surface → surfaceSelected | `#FFDDDA` | `#F2F4F7` | 1,15 | – | 4,2 | ΔL ≥3 | ✅ deutlich |
 | Stufe | surface → surfaceDisabled | `#E6E8EB` | `#F2F4F7` | 1,11 | – | 3,6 | ΔL ≥3 | ✅ sichtbar |
 | Farbschwäche | Auf ↔ Ab (normal) | `#005763` | `#BB081A` | – | – | 28,5 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (normal): Poor–Average | – | – | – | – | 11,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (normal): Good–Excellent | – | – | – | – | 13,8 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (normal): BL–SL | – | – | – | – | 13,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (protan) | `#4D5364` | `#4E4517` | – | – | 10,8 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (protan): Poor–Elite | – | – | – | – | 12,6 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (protan): Good–Excellent | – | – | – | – | 13,9 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (protan): BL–SL | – | – | – | – | 11,3 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (deutan) | `#414B63` | `#76690E` | – | – | 17,8 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (deutan): Poor–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (deutan): Good–Excellent | – | – | – | – | 14,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–SL | – | – | – | – | 13,0 | ΔE ≥10 | ✅ |
 | Farbschwäche | Auf ↔ Ab (tritan) | `#005C5B` | `#CF0014` | – | – | 31,0 | ΔE ≥10 | ✅ |
-| Farbschwäche | Noten-Skala, engstes Paar (tritan): Poor–Average | – | – | – | – | 9,8 | ΔE ≥8 | ✅ |
+| Farbschwäche | Noten-Skala, engstes Paar (tritan): Good–Excellent | – | – | – | – | 10,0 | ΔE ≥8 | ✅ |
 | Farbschwäche | Liga-Akzente + Rot + Gold, engstes Paar (tritan): PL–SL | – | – | – | – | 12,1 | ΔE ≥10 | ✅ |
 
 ### v1 (zum Vergleich): durchgefallen
 
-- **dark** (30): textTertiary auf background (8,39 : 1 / Lc -56,4); textTertiary auf surface (7,63 : 1 / Lc -55,4); textTertiary auf surfaceElevated (6,76 : 1 / Lc -54,0); textTertiary auf surfaceHover (6,92 : 1 / Lc -54,3); textTertiary auf surfaceOverlay (5,74 : 1 / Lc -51,6); textMuted auf surfaceOverlay (4,92 : 1 / Lc -44,6); accentText auf background (6,93 : 1 / Lc -48,6); accentText auf surface (6,31 : 1 / Lc -47,7); accentText auf surfaceElevated (5,58 : 1 / Lc -46,2); accentText auf accentMuted (5,22 : 1 / Lc -44,9); ratingDown auf accentMuted (5,22 : 1 / Lc -44,9); onAccent auf accent (3,95 : 1 / Lc -69,4); ratingInk auf ratingElite (6,68 : 1 / Lc 48,7); ratingInk auf ratingPoor (5,66 : 1 / Lc 43,0); ratingInk auf leagueBL (6,12 : 1 / Lc 45,2); onMkRed auf mkRed (4,35 : 1 / Lc 35,2); accentText auf mkInk (6,93 : 1 / Lc -48,6); borderStrong auf surface (2,92 : 1 / Lc -20,5); textFaint auf background (3,51 : 1 / Lc -23,9); background → surfaceDeep (1,05 : 1 / Lc –); surfaceDeep → surface (1,05 : 1 / Lc –); surfaceSunken → background (1,03 : 1 / Lc –); surface → surfaceWarm (1,00 : 1 / Lc –); surface → surfaceDisabled (1,05 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (6,7); Auf ↔ Ab (deutan) (8,1); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (2,4); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9)
-- **light** (23): textMuted auf surfaceOverlay (4,07 : 1 / Lc 56,5); ratingUp auf background (4,12 : 1 / Lc 61,5); ratingUp auf positiveMuted (4,06 : 1 / Lc 60,5); goldText auf background (3,97 : 1 / Lc 60,6); goldText auf surface (4,34 : 1 / Lc 66,6); goldText auf goldMuted (3,96 : 1 / Lc 60,6); ratingInk auf ratingElite (6,68 : 1 / Lc 48,7); ratingInk auf ratingPoor (5,66 : 1 / Lc 43,0); ratingInk auf leagueBL (3,41 : 1 / Lc 25,8); ratingInk auf leaguePL (4,39 : 1 / Lc 33,4); ratingInk auf leagueSL (3,99 : 1 / Lc 30,7); textFaint auf background (2,61 : 1 / Lc 46,3); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,07 : 1 / Lc –); surface → surfaceWarm (1,02 : 1 / Lc –); surface → surfaceHover (1,08 : 1 / Lc –); surfaceHover → surfacePressed (1,08 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Auf ↔ Ab (deutan) (4,7); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (4,3); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
+- **dark** (30): textTertiary auf background (8,39 : 1 / Lc -56,4); textTertiary auf surface (7,63 : 1 / Lc -55,4); textTertiary auf surfaceElevated (6,76 : 1 / Lc -54,0); textTertiary auf surfaceHover (6,92 : 1 / Lc -54,3); textTertiary auf surfaceOverlay (5,74 : 1 / Lc -51,6); textMuted auf surfaceOverlay (4,92 : 1 / Lc -44,6); accentText auf background (6,93 : 1 / Lc -48,6); accentText auf surface (6,31 : 1 / Lc -47,7); accentText auf surfaceElevated (5,58 : 1 / Lc -46,2); accentText auf accentMuted (5,22 : 1 / Lc -44,9); ratingDown auf accentMuted (5,22 : 1 / Lc -44,9); onAccent auf accent (3,95 : 1 / Lc -69,4); ratingInk auf ratingElite (6,68 : 1 / Lc 48,7); onRatingPoor auf ratingPoor (5,66 : 1 / Lc 43,0); ratingInk auf leagueBL (6,12 : 1 / Lc 45,2); onMkRed auf mkRed (4,35 : 1 / Lc 35,2); accentText auf mkInk (6,93 : 1 / Lc -48,6); borderStrong auf surface (2,92 : 1 / Lc -20,5); textFaint auf background (3,51 : 1 / Lc -23,9); background → surfaceDeep (1,05 : 1 / Lc –); surfaceDeep → surface (1,05 : 1 / Lc –); surfaceSunken → background (1,03 : 1 / Lc –); surface → surfaceWarm (1,00 : 1 / Lc –); surface → surfaceDisabled (1,05 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (6,7); Auf ↔ Ab (deutan) (8,1); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (2,4); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9)
+- **light** (23): textMuted auf surfaceOverlay (4,07 : 1 / Lc 56,5); ratingUp auf background (4,12 : 1 / Lc 61,5); ratingUp auf positiveMuted (4,06 : 1 / Lc 60,5); goldText auf background (3,97 : 1 / Lc 60,6); goldText auf surface (4,34 : 1 / Lc 66,6); goldText auf goldMuted (3,96 : 1 / Lc 60,6); ratingInk auf ratingElite (6,68 : 1 / Lc 48,7); onRatingPoor auf ratingPoor (5,66 : 1 / Lc 43,0); ratingInk auf leagueBL (3,41 : 1 / Lc 25,8); ratingInk auf leaguePL (4,39 : 1 / Lc 33,4); ratingInk auf leagueSL (3,99 : 1 / Lc 30,7); textFaint auf background (2,61 : 1 / Lc 46,3); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,07 : 1 / Lc –); surface → surfaceWarm (1,02 : 1 / Lc –); surface → surfaceHover (1,08 : 1 / Lc –); surfaceHover → surfacePressed (1,08 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Auf ↔ Ab (deutan) (4,7); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (4,3); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
 
 ## Option B · Messgerät · v2 im Detail
 
@@ -251,7 +254,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#131517` | `#9EFFFE` | 15,85 | 95,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#131517` | `#D6FC91` | 15,86 | 95,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#131517` | `#F8A052` | 8,84 | 62,7 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#131517` | `#FFBFB6` | 11,66 | 76,8 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#131517` | `#FFBFB6` | 11,66 | 76,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#131517` | `#9CACFF` | 8,51 | 60,7 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#131517` | `#9DFFB2` | 15,15 | 92,4 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#131517` | `#DECEFF` | 12,53 | 80,8 | – | ≥4,5 · Lc 60 | ✅ |
@@ -331,7 +334,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#121416` | `#9EFFFE` | 15,99 | 95,4 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#121416` | `#D6FC91` | 16,00 | 95,4 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#121416` | `#F8A052` | 8,92 | 62,8 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#121416` | `#FFBFB6` | 11,76 | 76,9 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#121416` | `#FFBFB6` | 11,76 | 76,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#121416` | `#9CACFF` | 8,58 | 60,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#121416` | `#9DFFB2` | 15,28 | 92,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#121416` | `#DECEFF` | 12,64 | 80,9 | – | ≥4,5 · Lc 60 | ✅ |
@@ -367,8 +370,8 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 
 ### v1 (zum Vergleich): durchgefallen
 
-- **dark** (31): textTertiary auf background (8,00 : 1 / Lc -55,8); textTertiary auf surface (7,24 : 1 / Lc -54,7); textTertiary auf surfaceElevated (6,42 : 1 / Lc -53,2); textTertiary auf surfaceHover (6,66 : 1 / Lc -53,7); textTertiary auf surfaceOverlay (5,51 : 1 / Lc -50,8); textMuted auf surfaceOverlay (4,84 : 1 / Lc -44,9); accentText auf background (6,91 : 1 / Lc -49,9); accentText auf surface (6,25 : 1 / Lc -48,8); accentText auf surfaceElevated (5,55 : 1 / Lc -47,2); accentText auf accentMuted (5,25 : 1 / Lc -46,2); ratingDown auf accentMuted (5,25 : 1 / Lc -46,2); onAccent auf accent (3,71 : 1 / Lc -67,6); ratingInk auf ratingElite (5,30 : 1 / Lc 40,9); ratingInk auf ratingExcellent (8,35 : 1 / Lc 60,0); ratingInk auf ratingPoor (5,67 : 1 / Lc 44,1); ratingInk auf leagueBL (5,85 : 1 / Lc 44,7); onMkRed auf mkRed (4,56 : 1 / Lc 37,2); accentText auf mkInk (6,91 : 1 / Lc -49,9); borderStrong auf surface (3,03 : 1 / Lc -22,4); textFaint auf background (3,65 : 1 / Lc -26,1); background → surfaceDeep (1,05 : 1 / Lc –); surfaceDeep → surface (1,06 : 1 / Lc –); surfaceSunken → background (1,04 : 1 / Lc –); surface → surfaceWarm (1,00 : 1 / Lc –); surface → surfaceHover (1,09 : 1 / Lc –); surface → surfaceDisabled (1,06 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (6,3); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (9,9); Noten-Skala, engstes Paar (deutan): Average–Good (6,5); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (4,5); Noten-Skala, engstes Paar (tritan): Good–Excellent (7,6)
-- **light** (20): textMuted auf surfaceOverlay (4,17 : 1 / Lc 59,3); goldText auf background (4,26 : 1 / Lc 65,5); goldText auf goldMuted (4,09 : 1 / Lc 62,7); onAccent auf accent (4,45 : 1 / Lc -73,4); ratingInk auf ratingElite (5,30 : 1 / Lc 40,9); ratingInk auf ratingExcellent (8,35 : 1 / Lc 60,0); ratingInk auf ratingPoor (5,67 : 1 / Lc 44,1); ratingInk auf leagueBL (3,26 : 1 / Lc 25,3); ratingInk auf leaguePL (4,20 : 1 / Lc 32,9); ratingInk auf leagueSL (3,82 : 1 / Lc 30,1); textFaint auf background (2,59 : 1 / Lc 47,9); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,03 : 1 / Lc –); surface → surfaceWarm (1,05 : 1 / Lc –); surface → surfaceHover (1,09 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (6,3); Noten-Skala, engstes Paar (deutan): Average–Good (6,5); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (4,8); Noten-Skala, engstes Paar (tritan): Good–Excellent (7,6); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
+- **dark** (31): textTertiary auf background (8,00 : 1 / Lc -55,8); textTertiary auf surface (7,24 : 1 / Lc -54,7); textTertiary auf surfaceElevated (6,42 : 1 / Lc -53,2); textTertiary auf surfaceHover (6,66 : 1 / Lc -53,7); textTertiary auf surfaceOverlay (5,51 : 1 / Lc -50,8); textMuted auf surfaceOverlay (4,84 : 1 / Lc -44,9); accentText auf background (6,91 : 1 / Lc -49,9); accentText auf surface (6,25 : 1 / Lc -48,8); accentText auf surfaceElevated (5,55 : 1 / Lc -47,2); accentText auf accentMuted (5,25 : 1 / Lc -46,2); ratingDown auf accentMuted (5,25 : 1 / Lc -46,2); onAccent auf accent (3,71 : 1 / Lc -67,6); ratingInk auf ratingElite (5,30 : 1 / Lc 40,9); ratingInk auf ratingExcellent (8,35 : 1 / Lc 60,0); onRatingPoor auf ratingPoor (5,67 : 1 / Lc 44,1); ratingInk auf leagueBL (5,85 : 1 / Lc 44,7); onMkRed auf mkRed (4,56 : 1 / Lc 37,2); accentText auf mkInk (6,91 : 1 / Lc -49,9); borderStrong auf surface (3,03 : 1 / Lc -22,4); textFaint auf background (3,65 : 1 / Lc -26,1); background → surfaceDeep (1,05 : 1 / Lc –); surfaceDeep → surface (1,06 : 1 / Lc –); surfaceSunken → background (1,04 : 1 / Lc –); surface → surfaceWarm (1,00 : 1 / Lc –); surface → surfaceHover (1,09 : 1 / Lc –); surface → surfaceDisabled (1,06 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (6,3); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (9,9); Noten-Skala, engstes Paar (deutan): Average–Good (6,5); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (4,5); Noten-Skala, engstes Paar (tritan): Good–Excellent (7,6)
+- **light** (20): textMuted auf surfaceOverlay (4,17 : 1 / Lc 59,3); goldText auf background (4,26 : 1 / Lc 65,5); goldText auf goldMuted (4,09 : 1 / Lc 62,7); onAccent auf accent (4,45 : 1 / Lc -73,4); ratingInk auf ratingElite (5,30 : 1 / Lc 40,9); ratingInk auf ratingExcellent (8,35 : 1 / Lc 60,0); onRatingPoor auf ratingPoor (5,67 : 1 / Lc 44,1); ratingInk auf leagueBL (3,26 : 1 / Lc 25,3); ratingInk auf leaguePL (4,20 : 1 / Lc 32,9); ratingInk auf leagueSL (3,82 : 1 / Lc 30,1); textFaint auf background (2,59 : 1 / Lc 47,9); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,03 : 1 / Lc –); surface → surfaceWarm (1,05 : 1 / Lc –); surface → surfaceHover (1,09 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (6,3); Noten-Skala, engstes Paar (deutan): Average–Good (6,5); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (4,8); Noten-Skala, engstes Paar (tritan): Good–Excellent (7,6); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
 
 ## Option C · Flutlicht · v2 im Detail
 
@@ -412,7 +415,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#140F0E` | `#9EFFFE` | 16,47 | 95,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#140F0E` | `#D6FC91` | 16,47 | 95,8 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#140F0E` | `#F8A052` | 9,18 | 63,2 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#140F0E` | `#FFBFB6` | 12,11 | 77,3 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#140F0E` | `#FFBFB6` | 12,11 | 77,3 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#140F0E` | `#9CACFF` | 8,84 | 61,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#140F0E` | `#9DFFB2` | 15,74 | 92,9 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#140F0E` | `#DECEFF` | 13,02 | 81,2 | – | ≥4,5 · Lc 60 | ✅ |
@@ -492,7 +495,7 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 | Text | ratingInk auf ratingExcellent | `#100B09` | `#9EFFFE` | 16,94 | 96,1 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingGood | `#100B09` | `#D6FC91` | 16,94 | 96,0 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf ratingAverage | `#100B09` | `#F8A052` | 9,44 | 63,5 | – | ≥4,5 · Lc 60 | ✅ |
-| Text | ratingInk auf ratingPoor | `#100B09` | `#FFBFB6` | 12,46 | 77,5 | – | ≥4,5 · Lc 60 | ✅ |
+| Text | onRatingPoor auf ratingPoor | `#100B09` | `#FFBFB6` | 12,46 | 77,5 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueBL | `#100B09` | `#9CACFF` | 9,09 | 61,4 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leaguePL | `#100B09` | `#9DFFB2` | 16,19 | 93,2 | – | ≥4,5 · Lc 60 | ✅ |
 | Text | ratingInk auf leagueSL | `#100B09` | `#DECEFF` | 13,39 | 81,5 | – | ≥4,5 · Lc 60 | ✅ |
@@ -528,6 +531,6 @@ Drei von fünf Stufen liegen unter ΔL 3. Das bestätigt die Kritik: Tabs und Fl
 
 ### v1 (zum Vergleich): durchgefallen
 
-- **dark** (31): textTertiary auf background (8,63 : 1 / Lc -57,2); textTertiary auf surface (7,89 : 1 / Lc -56,4); textTertiary auf surfaceElevated (7,07 : 1 / Lc -55,1); textTertiary auf surfaceHover (7,30 : 1 / Lc -55,5); textTertiary auf surfaceOverlay (6,03 : 1 / Lc -52,8); accentText auf background (7,30 : 1 / Lc -50,3); accentText auf surface (6,68 : 1 / Lc -49,5); accentText auf surfaceElevated (5,98 : 1 / Lc -48,2); accentText auf accentMuted (5,29 : 1 / Lc -46,0); ratingDown auf accentMuted (5,29 : 1 / Lc -46,0); onAccent auf accent (5,54 : 1 / Lc 42,6); ratingInk auf ratingElite (6,77 : 1 / Lc 48,9); ratingInk auf ratingPoor (5,74 : 1 / Lc 43,2); ratingInk auf leagueBL (6,20 : 1 / Lc 45,4); onMkRed auf mkRed (5,54 : 1 / Lc 42,6); onMkRedLarge auf mkRed (5,54 : 1 / Lc 42,6); accentText auf mkInk (7,30 : 1 / Lc -50,3); borderStrong auf surface (2,98 : 1 / Lc -20,7); textFaint auf background (3,54 : 1 / Lc -23,9); background → surfaceDeep (1,04 : 1 / Lc –); surfaceDeep → surface (1,05 : 1 / Lc –); surfaceSunken → background (1,03 : 1 / Lc –); surface → surfaceWarm (1,02 : 1 / Lc –); surface → surfaceDisabled (1,05 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (5,0); Auf ↔ Ab (deutan) (9,1); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (3,4); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); background #100B09 (R16 G11 B9) (–)
-- **light** (23): textMuted auf surfaceOverlay (4,31 : 1 / Lc 58,6); ratingUp auf background (4,39 : 1 / Lc 64,1); ratingUp auf positiveMuted (4,15 : 1 / Lc 60,5); goldText auf background (4,02 : 1 / Lc 61,6); goldText auf surface (4,36 : 1 / Lc 66,8); goldText auf goldMuted (3,86 : 1 / Lc 58,9); onAccent auf accent (4,42 : 1 / Lc 35,4); ratingInk auf ratingElite (6,77 : 1 / Lc 48,9); ratingInk auf ratingPoor (5,74 : 1 / Lc 43,2); ratingInk auf leagueBL (3,45 : 1 / Lc 25,9); ratingInk auf leaguePL (4,44 : 1 / Lc 33,5); ratingInk auf leagueSL (4,04 : 1 / Lc 30,8); textFaint auf background (2,75 : 1 / Lc 48,6); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,07 : 1 / Lc –); surface → surfaceWarm (1,06 : 1 / Lc –); surface → surfaceHover (1,08 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Auf ↔ Ab (deutan) (4,5); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (6,3); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
+- **dark** (31): textTertiary auf background (8,63 : 1 / Lc -57,2); textTertiary auf surface (7,89 : 1 / Lc -56,4); textTertiary auf surfaceElevated (7,07 : 1 / Lc -55,1); textTertiary auf surfaceHover (7,30 : 1 / Lc -55,5); textTertiary auf surfaceOverlay (6,03 : 1 / Lc -52,8); accentText auf background (7,30 : 1 / Lc -50,3); accentText auf surface (6,68 : 1 / Lc -49,5); accentText auf surfaceElevated (5,98 : 1 / Lc -48,2); accentText auf accentMuted (5,29 : 1 / Lc -46,0); ratingDown auf accentMuted (5,29 : 1 / Lc -46,0); onAccent auf accent (5,54 : 1 / Lc 42,6); ratingInk auf ratingElite (6,77 : 1 / Lc 48,9); onRatingPoor auf ratingPoor (5,74 : 1 / Lc 43,2); ratingInk auf leagueBL (6,20 : 1 / Lc 45,4); onMkRed auf mkRed (5,54 : 1 / Lc 42,6); onMkRedLarge auf mkRed (5,54 : 1 / Lc 42,6); accentText auf mkInk (7,30 : 1 / Lc -50,3); borderStrong auf surface (2,98 : 1 / Lc -20,7); textFaint auf background (3,54 : 1 / Lc -23,9); background → surfaceDeep (1,04 : 1 / Lc –); surfaceDeep → surface (1,05 : 1 / Lc –); surfaceSunken → background (1,03 : 1 / Lc –); surface → surfaceWarm (1,02 : 1 / Lc –); surface → surfaceDisabled (1,05 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Liga-Akzente + Rot + Gold, engstes Paar (protan): PL–Gold (5,0); Auf ↔ Ab (deutan) (9,1); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Gold (3,4); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); background #100B09 (R16 G11 B9) (–)
+- **light** (23): textMuted auf surfaceOverlay (4,31 : 1 / Lc 58,6); ratingUp auf background (4,39 : 1 / Lc 64,1); ratingUp auf positiveMuted (4,15 : 1 / Lc 60,5); goldText auf background (4,02 : 1 / Lc 61,6); goldText auf surface (4,36 : 1 / Lc 66,8); goldText auf goldMuted (3,86 : 1 / Lc 58,9); onAccent auf accent (4,42 : 1 / Lc 35,4); ratingInk auf ratingElite (6,77 : 1 / Lc 48,9); onRatingPoor auf ratingPoor (5,74 : 1 / Lc 43,2); ratingInk auf leagueBL (3,45 : 1 / Lc 25,9); ratingInk auf leaguePL (4,44 : 1 / Lc 33,5); ratingInk auf leagueSL (4,04 : 1 / Lc 30,8); textFaint auf background (2,75 : 1 / Lc 48,6); background → surfaceDeep (1,05 : 1 / Lc –); surface → surfaceElevated (1,07 : 1 / Lc –); surface → surfaceWarm (1,06 : 1 / Lc –); surface → surfaceHover (1,08 : 1 / Lc –); Noten-Skala, engstes Paar (protan): Average–Good (3,5); Auf ↔ Ab (deutan) (4,5); Noten-Skala, engstes Paar (deutan): Average–Good (2,1); Liga-Akzente + Rot + Gold, engstes Paar (deutan): PL–Rot (6,3); Noten-Skala, engstes Paar (tritan): Excellent–Elite (7,9); Liga-Akzente + Rot + Gold, engstes Paar (tritan): BL–SL (3,7)
 

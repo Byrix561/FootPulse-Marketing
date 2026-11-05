@@ -1,6 +1,6 @@
 # Designsystem 2026
 
-Stand 05.11.2026 · Status: **drei Optionen fertig, Entscheidung durch Burhan offen**
+Stand 05.11.2026 · Status: **Option A gewählt (05.11.2026), TOTW und Logo folgen**
 
 Hier liegt das komplette Designsystem von FootPulse in drei Optionen. Jede Option ist vollständig, und die Optionen lassen sich mischen.
 

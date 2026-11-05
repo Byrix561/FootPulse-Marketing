@@ -88,8 +88,8 @@ def konten():
 def abwertung(r):
     big = "−5" if r != "C" else "Absturz"
     return f"""<section class="ex post dark" id="ex-abwertung" style="width:540px;height:675px">
-<div class="grid-bg"></div><div class="in"><div><span class="lgt" style="background:var(--leagueBL)">BL</span><div class="t" style="color:var(--accentText);margin-top:14px">Abwertung der Woche</div></div>
-<div><div class="big" style="font-size:{170 if r != 'C' else 112}px;color:var(--accentText)">{big}</div>
+<div class="grid-bg"></div><div class="in"><div><span class="lgt" style="background:var(--leagueBL)">BL</span><div class="t" style="color:var(--ratingDown);margin-top:14px">Abwertung der Woche</div></div>
+<div><div class="big" style="font-size:{170 if r != 'C' else 112}px;color:var(--ratingDown)">{big}</div>
 <div class="sub" style="font-size:24px;margin-top:8px">P. Lindqvist · jetzt 77</div>
 <div class="s" style="font-size:16px;margin-top:6px">Warum? Drei Spiele ohne Torschuss, Zweikampfquote 38 %.</div></div>
 <img src="{LOGO_D}" style="height:24px" alt=""></div></section>"""

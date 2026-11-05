@@ -18,6 +18,6 @@ Stand: 05.11.2026 · zuletzt geändert von: Marketing-Chat (mit Burhan)
 
 ## Was wartet
 
-- **Burhan:** Wahl der Option (A, B, C oder Mischung) für Palette, Schrift und Logo. Empfehlung: A (`marke/designsystem/entscheidung.md`).
+- Designsystem: Burhan hat Option A gewählt (05.11.). Offen sind noch der TOTW-Screenshot von Burhan, ein eigener Logo-Termin und später der Aufbau der Seiten.
 - Messung, welches Konto Wartelisten-Anmeldungen bringt: noch nicht möglich, Prüfauftrag liegt im FootPulse-Code-Repo.
 - Hasan kommt später dazu.

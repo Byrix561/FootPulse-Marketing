@@ -44,13 +44,18 @@ def pruefen(p, theme):
         rows.append(_text(p, "accentText", bg, "inhalt"))
     for bg in ("background", "surface", "positiveMuted"):
         rows.append(_text(p, "ratingUp", bg, "inhalt"))
-    rows.append(_text(p, "ratingDown", "accentMuted", "inhalt"))
+    if p["ratingPoor"] == p["accent"]:  # A ab Runde 4: Abwertung ist Großschrift, der Chip ist eine rote Fläche
+        rows.append(_gross(p, "ratingDown", "background", 3.0, 40, "Großtext"))
+        rows.append(_gross(p, "onAccent", "accent", 4.5, 60, "Abwertungs-Chip"))
+    else:
+        rows.append(_text(p, "ratingDown", "accentMuted", "inhalt"))
     for bg in ("background", "surface"):
         rows.append(_text(p, "goldText", bg, "inhalt"))
     rows.append(_text(p, "goldText", "goldMuted", "inhalt"))
     rows.append(_gross(p, "onAccent", "accent", 4.5, 60, "Button-Text"))
-    for s in ("ratingElite", "ratingExcellent", "ratingGood", "ratingAverage", "ratingPoor"):
+    for s in ("ratingElite", "ratingExcellent", "ratingGood", "ratingAverage"):
         rows.append(_text(p, "ratingInk", s, "inhalt"))
+    rows.append(_text(p, "onRatingPoor", "ratingPoor", "inhalt"))
     for l in ("leagueBL", "leaguePL", "leagueSL"):
         rows.append(_text(p, "ratingInk", l, "inhalt"))
     # Marketing: kleiner Text auf Rot und große Schlagzeilen
