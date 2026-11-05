@@ -2,7 +2,7 @@
 
 - **Für:** Kerem (später auch Hasan)
 - **Mit:** Marketing-Chat
-- **Status:** in Arbeit (Designsystem 2026, Runde 1 fertig, wartet auf Burhan)
+- **Status:** alle Runden in drei Optionen fertig, wartet auf Burhans Entscheidung
 - **Entscheidet am Ende:** Burhan (Palette und Logo, weil sie auch die App betreffen)
 - **OneDrive:** `00 Marke/`
 
@@ -36,8 +36,8 @@ Zwei bis drei Varianten: genaues Rot, Schwarztöne, Akzentfarbe für Besonderes,
 
 Tipp: Kontrast nach WCAG prüfen. Normaler Text braucht mindestens 4,5 : 1, große Überschriften mindestens 3 : 1. Rot auf Schwarz ist oft knapp, deshalb gibt es heute ein helleres „Text-Rot“.
 
-- [ ] Varianten erstellt
-- [ ] Empfehlung geschrieben
+- [x] Varianten erstellt
+- [x] Empfehlung geschrieben
 
 ### 4. Logo-System
 
@@ -45,30 +45,30 @@ Hauptlogo, Kurzform (nur Puls-Zeichen, z. B. als Profilbild), einfarbige Variant
 
 Denkanstöße für die Liga-Konten: gleiches Puls-Zeichen, aber Zusatz in der Kontosprache; ein kleiner Farbakzent je Liga; gleiches Raster, anderes Kürzel (BL, PL, SL). Keine echten Liga-Logos verwenden.
 
-- [ ] Hauptlogo
-- [ ] Kurzform / Profilbild
-- [ ] Einfarbige Varianten
-- [ ] Konzept für die Liga-Konten
+- [x] Hauptlogo
+- [x] Kurzform / Profilbild
+- [x] Einfarbige Varianten
+- [x] Konzept für die Liga-Konten
 
 ### 5. Schrift und Bildsprache
 
 Schrift für Überschriften und Fließtext, Regeln für Fotos, Karten, Zahlen und Untertitel in Videos.
 
-- [ ] Schriften festgelegt
-- [ ] Regeln für Bildsprache
+- [x] Schriften festgelegt (je Option, Entscheidung offen)
+- [x] Regeln für Bildsprache
 
 ### 6. Vorlagen
 
 Daraus ein **Canva-Markenset**: Farben, Schriften, Logos, Vorlagen je Konto und Format (Reel-Cover, Karussell, Story, X-Bild).
 
-- [ ] Canva-Markenset angelegt
-- [ ] Vorlagen-Exporte in OneDrive `00 Marke/` und `06 Vorlagen/`
+- [ ] Canva-Markenset angelegt (nicht angebunden, Anleitung: `marke/designsystem/canva-anleitung.md`)
+- [x] Vorlagen-Exporte in OneDrive `00 Marke/` und `06 Vorlagen/`
 
 ### 7. Abschluss
 
 `marke/stil.md` wird zur gültigen Fassung. Burhan entscheidet über die finale Palette und das Logo. Danach bekommt der FootPulse-Supervisor-Chat die Farben als Vorschlag für die App (Burhan überträgt).
 
-- [ ] Kurzbericht an Burhan mit Empfehlung
+- [x] Kurzbericht an Burhan mit Empfehlung
 - [ ] Burhans Entscheidung eingetragen
 - [ ] `marke/stil.md` final
 
@@ -83,3 +83,4 @@ Daraus ein **Canva-Markenset**: Farben, Schriften, Logos, Vorlagen je Konto und 
 **04.11.2026 · Erweiterung durch Burhan:** Die Aufgabe ist zum kompletten Designsystem 2026 erweitert worden (Markenkern, Farben mit Tests, Logo-System, Formensprache, Bausteine, Marketing-Vorlagen, Übergabe). Wo sich die beiden widersprechen, gilt die Erweiterung. Canva wird nicht direkt angebunden. Kerem bekommt am Ende eine Anleitung.
 
 - **Runde 1 (04.11.2026):** Markenkern, Bestandsanalyse, Vorbilder, drei Richtungen. Datei: `marke/designsystem/runde-1/grundlage.md`, Moodboards: `marke/designsystem/runde-1/richtungen.html`. Empfehlung: Richtung A „Anzeigetafel“. Wartet auf Burhans Wahl.
+- **Runde 2 und 3 plus Übergabe (05.11.2026):** Auf Burhans Wunsch alle Runden für alle drei Richtungen, damit er wählen oder mischen kann. Ergebnis: `marke/designsystem/` (README, Entscheidungsvorlage, Kurzbericht, Testmatrix, je Option Tokens, Alt-Neu-Tabelle, Testseiten, Vorlagen, Logos). Medien in OneDrive `00 Marke/Designsystem 2026/`. Empfehlung: Option A komplett.

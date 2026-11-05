@@ -1,0 +1,356 @@
+{
+ "A": {
+  "dark_v1": {
+   "pixel": {
+    "surfaceSunken": "#07090D",
+    "background": "#0C0E13",
+    "surfaceDeep": "#121418",
+    "surface": "#17191F",
+    "surfaceHover": "#1F2228",
+    "surfaceElevated": "#21242A",
+    "surfacePressed": "#282B32",
+    "surfaceOverlay": "#2D3037",
+    "surfaceSelected": "#3B1C1B",
+    "surfaceWarm": "#221616",
+    "surfaceDisabled": "#121417",
+    "focusRing": "#17191F"
+   },
+   "dL": {
+    "background → surfaceDeep": 2.7,
+    "surfaceDeep → surface": 2.3,
+    "surface → surfaceElevated": 4.6,
+    "surfaceElevated → surfaceOverlay": 4.9,
+    "surfaceSunken → background": 2.5,
+    "surface → surfaceHover": 3.7,
+    "surfaceHover → surfacePressed": 3.8,
+    "surface → surfaceSelected": 5.6
+   }
+  },
+  "dark_v2": {
+   "pixel": {
+    "surfaceSunken": "#06080C",
+    "background": "#0D0F14",
+    "surfaceDeep": "#15171C",
+    "surface": "#1D1F24",
+    "surfaceHover": "#26282D",
+    "surfaceElevated": "#272A30",
+    "surfacePressed": "#2F3237",
+    "surfaceOverlay": "#34373D",
+    "surfaceSelected": "#44211F",
+    "surfaceWarm": "#352222",
+    "surfaceDisabled": "#14161A",
+    "focusRing": "#1D1F24"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.6,
+    "surfaceDeep → surface": 3.5,
+    "surface → surfaceElevated": 4.5,
+    "surfaceElevated → surfaceOverlay": 5.2,
+    "surfaceSunken → background": 3.5,
+    "surface → surfaceHover": 3.8,
+    "surfaceHover → surfacePressed": 3.9,
+    "surface → surfaceSelected": 5.6
+   },
+   "feed": {
+    "mittel_eigen": "#E4474C",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 20.4,
+    "kontrast_nach_unschaerfe": 0.25
+   }
+  },
+  "light_v1": {
+   "pixel": {
+    "surfaceSunken": "#DFE1E6",
+    "background": "#E9EBEF",
+    "surfaceDeep": "#E4E6EA",
+    "surface": "#F4F5F8",
+    "surfaceHover": "#EBEDF1",
+    "surfaceElevated": "#FDFDFF",
+    "surfacePressed": "#E2E5E9",
+    "surfaceOverlay": "#D6D9DF",
+    "surfaceSelected": "#FFDFDD",
+    "surfaceWarm": "#FDF0EF",
+    "surfaceDisabled": "#E8E9EC",
+    "focusRing": "#F4F5F8"
+   },
+   "dL": {
+    "background → surfaceDeep": 1.5,
+    "surfaceDeep → surface": 4.6,
+    "surface → surfaceElevated": 2.4,
+    "surfaceElevated → surfaceOverlay": 11.0,
+    "surfaceSunken → background": 3.0,
+    "surface → surfaceHover": 2.5,
+    "surfaceHover → surfacePressed": 2.5,
+    "surface → surfaceSelected": 4.1
+   }
+  },
+  "light_v2": {
+   "pixel": {
+    "surfaceSunken": "#D0D3D8",
+    "background": "#DBDEE3",
+    "surfaceDeep": "#E7E9EE",
+    "surface": "#F2F4F7",
+    "surfaceHover": "#E6E8EE",
+    "surfaceElevated": "#FFFFFF",
+    "surfacePressed": "#D9DCE1",
+    "surfaceOverlay": "#E7E9EF",
+    "surfaceSelected": "#FFDDDA",
+    "surfaceWarm": "#F9E1E1",
+    "surfaceDisabled": "#E6E8EB",
+    "focusRing": "#F2F4F7"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.4,
+    "surfaceDeep → surface": 3.3,
+    "surface → surfaceElevated": 3.4,
+    "surfaceElevated → surfaceOverlay": 6.6,
+    "surfaceSunken → background": 3.4,
+    "surface → surfaceHover": 3.5,
+    "surfaceHover → surfacePressed": 3.8,
+    "surface → surfaceSelected": 4.2
+   },
+   "feed": {
+    "mittel_eigen": "#E4474C",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 20.4,
+    "kontrast_nach_unschaerfe": 0.25
+   }
+  }
+ },
+ "B": {
+  "dark_v1": {
+   "pixel": {
+    "surfaceSunken": "#0D0F10",
+    "background": "#121416",
+    "surfaceDeep": "#17191B",
+    "surface": "#1C1E21",
+    "surfaceHover": "#232528",
+    "surfaceElevated": "#25282B",
+    "surfacePressed": "#2B2E31",
+    "surfaceOverlay": "#303336",
+    "surfaceSelected": "#182E3D",
+    "surfaceWarm": "#241C1A",
+    "surfaceDisabled": "#17181A",
+    "focusRing": "#1C1E21"
+   },
+   "dL": {
+    "background → surfaceDeep": 2.2,
+    "surfaceDeep → surface": 2.2,
+    "surface → surfaceElevated": 4.1,
+    "surfaceElevated → surfaceOverlay": 4.4,
+    "surfaceSunken → background": 2.3,
+    "surface → surfaceHover": 2.9,
+    "surfaceHover → surfacePressed": 3.6,
+    "surface → surfaceSelected": 5.6
+   }
+  },
+  "dark_v2": {
+   "pixel": {
+    "surfaceSunken": "#0C0D0F",
+    "background": "#131517",
+    "surfaceDeep": "#1B1D1F",
+    "surface": "#232528",
+    "surfaceHover": "#2D2F31",
+    "surfaceElevated": "#2E3133",
+    "surfacePressed": "#36383A",
+    "surfaceOverlay": "#3B3D40",
+    "surfaceSelected": "#1C3648",
+    "surfaceWarm": "#3B2926",
+    "surfaceDisabled": "#1A1C1E",
+    "focusRing": "#232528"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.5,
+    "surfaceDeep → surface": 3.4,
+    "surface → surfaceElevated": 4.7,
+    "surfaceElevated → surfaceOverlay": 4.8,
+    "surfaceSunken → background": 3.6,
+    "surface → surfaceHover": 4.0,
+    "surfaceHover → surfacePressed": 3.6,
+    "surface → surfaceSelected": 5.7
+   },
+   "feed": {
+    "mittel_eigen": "#E06263",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 16.3,
+    "kontrast_nach_unschaerfe": 0.33
+   }
+  },
+  "light_v1": {
+   "pixel": {
+    "surfaceSunken": "#EBE9E4",
+    "background": "#F5F3EF",
+    "surfaceDeep": "#F0EEEA",
+    "surface": "#FCFCF9",
+    "surfaceHover": "#F3F2ED",
+    "surfaceElevated": "#FFFFFF",
+    "surfacePressed": "#E9E8E3",
+    "surfaceOverlay": "#E1E0DB",
+    "surfaceSelected": "#DCF0FF",
+    "surfaceWarm": "#FFF4F1",
+    "surfaceDisabled": "#EFEEEB",
+    "focusRing": "#FCFCF9"
+   },
+   "dL": {
+    "background → surfaceDeep": 1.5,
+    "surfaceDeep → surface": 4.1,
+    "surface → surfaceElevated": 1.0,
+    "surfaceElevated → surfaceOverlay": 9.4,
+    "surfaceSunken → background": 3.0,
+    "surface → surfaceHover": 3.0,
+    "surfaceHover → surfacePressed": 3.0,
+    "surface → surfaceSelected": 4.5
+   }
+  },
+  "light_v2": {
+   "pixel": {
+    "surfaceSunken": "#D4D3CE",
+    "background": "#DFDEDA",
+    "surfaceDeep": "#EAE9E6",
+    "surface": "#F5F4F1",
+    "surfaceHover": "#EAE8E4",
+    "surfaceElevated": "#FFFFFF",
+    "surfacePressed": "#DDDCD7",
+    "surfaceOverlay": "#EBE9E5",
+    "surfaceSelected": "#D2EAFC",
+    "surfaceWarm": "#F8E3DB",
+    "surfaceDisabled": "#E8E8E6",
+    "focusRing": "#F5F4F1"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.4,
+    "surfaceDeep → surface": 3.3,
+    "surface → surfaceElevated": 3.3,
+    "surfaceElevated → surfaceOverlay": 6.6,
+    "surfaceSunken → background": 3.4,
+    "surface → surfaceHover": 3.6,
+    "surfaceHover → surfacePressed": 3.8,
+    "surface → surfaceSelected": 4.2
+   },
+   "feed": {
+    "mittel_eigen": "#E06263",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 16.3,
+    "kontrast_nach_unschaerfe": 0.33
+   }
+  }
+ },
+ "C": {
+  "dark_v1": {
+   "pixel": {
+    "surfaceSunken": "#0A0605",
+    "background": "#100B09",
+    "surfaceDeep": "#16100E",
+    "surface": "#1C1613",
+    "surfaceHover": "#251D1A",
+    "surfaceElevated": "#27201D",
+    "surfacePressed": "#2F2723",
+    "surfaceOverlay": "#342C28",
+    "surfaceSelected": "#3F1916",
+    "surfaceWarm": "#261412",
+    "surfaceDisabled": "#15110F",
+    "focusRing": "#1C1613"
+   },
+   "dL": {
+    "background → surfaceDeep": 2.5,
+    "surfaceDeep → surface": 2.6,
+    "surface → surfaceElevated": 4.4,
+    "surfaceElevated → surfaceOverlay": 5.0,
+    "surfaceSunken → background": 2.7,
+    "surface → surfaceHover": 3.3,
+    "surfaceHover → surfacePressed": 4.1,
+    "surface → surfaceSelected": 6.3
+   }
+  },
+  "dark_v2": {
+   "pixel": {
+    "surfaceSunken": "#0C0807",
+    "background": "#140F0E",
+    "surfaceDeep": "#1C1715",
+    "surface": "#241F1D",
+    "surfaceHover": "#2D2826",
+    "surfaceElevated": "#2F2A28",
+    "surfacePressed": "#37322F",
+    "surfaceOverlay": "#3C3734",
+    "surfaceSelected": "#46221F",
+    "surfaceWarm": "#362422",
+    "surfaceDisabled": "#1A1615",
+    "focusRing": "#241F1D"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.5,
+    "surfaceDeep → surface": 3.4,
+    "surface → surfaceElevated": 4.5,
+    "surfaceElevated → surfaceOverlay": 5.1,
+    "surfaceSunken → background": 3.5,
+    "surface → surfaceHover": 3.7,
+    "surfaceHover → surfacePressed": 4.0,
+    "surface → surfaceSelected": 5.6
+   },
+   "feed": {
+    "mittel_eigen": "#DC6964",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 14.8,
+    "kontrast_nach_unschaerfe": 0.4
+   }
+  },
+  "light_v1": {
+   "pixel": {
+    "surfaceSunken": "#E8E2D7",
+    "background": "#F1ECE3",
+    "surfaceDeep": "#EDE7DD",
+    "surface": "#F9F5EE",
+    "surfaceHover": "#F1ECE3",
+    "surfaceElevated": "#FEFDF9",
+    "surfacePressed": "#E8E2D7",
+    "surfaceOverlay": "#E0DACF",
+    "surfaceSelected": "#FFDDD7",
+    "surfaceWarm": "#FFEBE5",
+    "surfaceDisabled": "#ECE9E2",
+    "focusRing": "#F9F5EE"
+   },
+   "dL": {
+    "background → surfaceDeep": 1.5,
+    "surfaceDeep → surface": 4.1,
+    "surface → surfaceElevated": 2.2,
+    "surfaceElevated → surfaceOverlay": 10.4,
+    "surfaceSunken → background": 3.0,
+    "surface → surfaceHover": 2.7,
+    "surfaceHover → surfacePressed": 3.0,
+    "surface → surfaceSelected": 4.7
+   }
+  },
+  "light_v2": {
+   "pixel": {
+    "surfaceSunken": "#D7D2C7",
+    "background": "#E3DDD2",
+    "surfaceDeep": "#EDE9E0",
+    "surface": "#F7F4ED",
+    "surfaceHover": "#EDE8DD",
+    "surfaceElevated": "#FFFFFF",
+    "surfacePressed": "#E1DBD0",
+    "surfaceOverlay": "#EEE9DE",
+    "surfaceSelected": "#FFDDD9",
+    "surfaceWarm": "#F8E3DB",
+    "surfaceDisabled": "#EAE7E2",
+    "focusRing": "#F7F4ED"
+   },
+   "dL": {
+    "background → surfaceDeep": 3.5,
+    "surfaceDeep → surface": 3.3,
+    "surface → surfaceElevated": 3.2,
+    "surfaceElevated → surfaceOverlay": 6.5,
+    "surfaceSunken → background": 3.5,
+    "surface → surfaceHover": 3.6,
+    "surfaceHover → surfacePressed": 3.9,
+    "surface → surfaceSelected": 4.3
+   },
+   "feed": {
+    "mittel_eigen": "#DC6964",
+    "mittel_fremd": "#9B9C8A",
+    "dE_zum_feed": 14.8,
+    "kontrast_nach_unschaerfe": 0.4
+   }
+  }
+ }
+}

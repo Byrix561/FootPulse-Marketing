@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Export C</title></head><body>
+<script>
+const LISTE = {"app-icon.svg": [1024, 512, 256, 180, 120], "favicon.svg": [16, 32, 48, 192], "profilbild.svg": [1080, 400], "profilbild-bl.svg": [1080], "profilbild-pl.svg": [1080], "profilbild-sl.svg": [1080], "kombi-quer-auf-dunkel.svg": [2000, 1000, 500], "kombi-quer-auf-hell.svg": [2000, 1000, 500], "kombi-quer-mono-weiss.svg": [2000, 1000], "kombi-quer-mono-schwarz.svg": [2000, 1000], "wortmarke-auf-dunkel.svg": [2000, 1000], "wortmarke-auf-hell.svg": [2000, 1000], "wortmarke-mono-weiss.svg": [2000], "wortmarke-mono-schwarz.svg": [2000], "bildmarke-mono-weiss.svg": [1024, 256], "bildmarke-mono-schwarz.svg": [1024, 256], "bildmarke-rot.svg": [1024, 512, 256], "bildmarke-dunkel.svg": [1024], "wortmarke-einzeilig-auf-dunkel.svg": [2000], "wortmarke-einzeilig-auf-hell.svg": [2000]};
+async function render(name, w) {
+  const txt = await (await fetch('logo/' + name)).text();
+  const img = new Image();
+  const url = URL.createObjectURL(new Blob([txt], {type: 'image/svg+xml'}));
+  await new Promise((ok, no) => { img.onload = ok; img.onerror = no; img.src = url; });
+  const h = Math.round(w * img.naturalHeight / img.naturalWidth);
+  const c = document.createElement('canvas'); c.width = w; c.height = h;
+  c.getContext('2d').drawImage(img, 0, 0, w, h);
+  return c.toDataURL('image/png');
+}
+window.exportAlle = async () => {
+  const out = {};
+  for (const [n, ws] of Object.entries(LISTE)) for (const w of ws) out[n.replace('.svg', '') + '_' + w + 'px.png'] = await render(n, w);
+  return out;
+};
+</script></body></html>

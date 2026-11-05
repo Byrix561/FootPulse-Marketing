@@ -1,0 +1,93 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Vorlagen A Anzeigetafel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=block" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css"><style>
+*{box-sizing:border-box} body{margin:0;background:#6b6b6b;font-family:var(--font-text)}
+.board{display:flex;flex-direction:column;gap:80px;padding:80px} .row-b{display:flex;gap:80px;align-items:flex-start}
+.tpl{position:relative;overflow:hidden;flex:none}
+.post{background:var(--mkRed);color:var(--onMkRedLarge)} .post.dark{background:var(--mkInk);color:var(--mkPaper)}
+.abs{position:absolute}
+.foto{background:repeating-linear-gradient(135deg,#2c2f35 0 24px,#33363d 24px 48px);display:flex;align-items:flex-end;justify-content:flex-start;filter:grayscale(1)}
+.foto span{color:#cfd2d8;font:600 26px system-ui;padding:24px;opacity:.85}
+.post:not(.dark) .foto{mix-blend-mode:multiply;opacity:.55}
+.safe{position:absolute;inset:0} .safe i{position:absolute;background:rgba(0,170,255,.22);border:3px dashed rgba(0,170,255,.95)}
+.safe b{position:absolute;border:6px dashed #ffe14d}
+.lg{display:inline-block;padding:10px 22px;font:800 34px var(--font-label);letter-spacing:.08em;color:var(--ratingInk)}
+.pitch{border:4px solid rgba(255,255,255,.25)} .pitch::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:4px solid rgba(255,255,255,.25)}
+.pm{position:absolute;transform:translate(-50%,-50%);text-align:center;width:150px;padding:10px 8px;background:var(--mkPaper);color:var(--mkInk)}
+.pm b{display:block;font:800 54px/1 var(--font-zahl);font-variant-numeric:tabular-nums} .pm span{display:block;font:700 24px var(--font-text);white-space:nowrap}
+.row{display:flex;align-items:baseline;gap:30px;border-bottom:3px solid rgba(255,255,255,.18);padding:22px 0;font-size:44px}
+.row span{flex:1} .row b{font-variant-numeric:tabular-nums} .chipup{font-style:normal;font:700 40px var(--font-zahl);color:var(--ratingUp);background:var(--positiveMuted);padding:6px 16px}
+.fr{position:absolute;left:16px;bottom:12px;font:600 22px system-ui;color:inherit;opacity:.7}
+
+.tpl .k{font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+.tpl .big{font-family:var(--font-display);font-weight:800;letter-spacing:-.01em}
+.tpl .hl{font-family:var(--font-display);font-weight:800;text-transform:uppercase;line-height:.92}
+.tpl .bar{position:absolute;left:0;height:18px;background:var(--mkPaper)}
+.tpl .cut{clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%)}
+.tpl .card{background:var(--mkInk);color:var(--mkPaper)}
+.sub-style{font-family:var(--font-display);font-weight:700;background:var(--mkInk);color:var(--mkPaper);padding:10px 22px;box-shadow:inset 8px 0 0 var(--accent)}
+</style></head><body data-theme="dark">
+<div class="board">
+<div class="row-b"><div class="tpl post" id="reel-cover" style="width:1080px;height:1920px">
+<div class="foto" style="width:1080px;height:1100px;position:absolute;left:0;top:520px"><span>Platzhalter Spielerfoto (frei lizenziert)</span></div>
+<div class="bar" style="top:360px;width:300px"></div>
+<div class="abs" style="left:90px;top:400px;right:170px">
+<div class="k" style="font-size:52px">Upgrade of the week</div>
+<div class="big" style="font-size:420px;line-height:.8;margin-top:30px;white-space:nowrap">+4</div></div>
+<div class="abs card cut" style="left:90px;right:170px;top:1180px;padding:40px 44px">
+<div class="hl" style="font-size:64px" lang="tr">K. Demir · now 88</div>
+<div style="font-size:34px;margin-top:14px;font-family:var(--font-text)">3 games · 2 goals · pressing 18 % above league average</div>
+<img src="logo/kombi-quer-auf-dunkel.svg" style="height:54px;margin-top:30px" alt=""></div>
+</div><div class="tpl post" id="reel-safe" style="width:1080px;height:1920px">
+<div class="foto" style="width:1080px;height:1100px;position:absolute;left:0;top:520px"><span>Platzhalter Spielerfoto (frei lizenziert)</span></div>
+<div class="bar" style="top:360px;width:300px"></div>
+<div class="abs" style="left:90px;top:400px;right:170px">
+<div class="k" style="font-size:52px">Upgrade of the week</div>
+<div class="big" style="font-size:420px;line-height:.8;margin-top:30px;white-space:nowrap">+4</div></div>
+<div class="abs card cut" style="left:90px;right:170px;top:1180px;padding:40px 44px">
+<div class="hl" style="font-size:64px" lang="tr">K. Demir · now 88</div>
+<div style="font-size:34px;margin-top:14px;font-family:var(--font-text)">3 games · 2 goals · pressing 18 % above league average</div>
+<img src="logo/kombi-quer-auf-dunkel.svg" style="height:54px;margin-top:30px" alt=""></div>
+<div class="safe"><i style="left:0;right:0;top:0;height:250px"></i><i style="left:0;right:0;bottom:0;height:480px"></i><i style="right:0;top:250px;bottom:480px;width:150px"></i><i style="left:0;top:250px;bottom:480px;width:60px"></i><b style="left:0;right:0;top:240px;height:1440px"></b></div></div><div class="tpl post dark" id="story" style="width:1080px;height:1920px">
+<div class="abs" style="left:80px;top:200px;right:80px">
+<span class="lg" style="background:var(--leagueSL)">SÜPER LİG</span>
+<div class="hl" style="font-size:150px;margin-top:40px" lang="tr">Haftanın<br>Takımı</div>
+<div class="k" style="font-size:40px;margin-top:24px;color:var(--accentText)" lang="tr">11. Hafta</div></div>
+<div class="abs pitch" style="left:80px;right:80px;top:760px;height:820px">
+<div class="pm" style="left:50%;top:86%"><b>82</b><span lang="tr">Iversen</span></div><div class="pm" style="left:18%;top:64%"><b>79</b><span lang="tr">Şahin</span></div><div class="pm" style="left:39%;top:66%"><b>84</b><span lang="tr">Novak</span></div><div class="pm" style="left:61%;top:66%"><b>81</b><span lang="tr">Moreau</span></div><div class="pm" style="left:82%;top:64%"><b>80</b><span lang="tr">Brennan</span></div><div class="pm" style="left:28%;top:42%"><b>86</b><span lang="tr">Okafor</span></div><div class="pm" style="left:50%;top:46%"><b>83</b><span lang="tr">Yıldız</span></div><div class="pm" style="left:72%;top:42%"><b>82</b><span lang="tr">Lindqvist</span></div><div class="pm" style="left:20%;top:18%"><b>85</b><span lang="tr">Silva</span></div><div class="pm" style="left:50%;top:12%"><b>88</b><span lang="tr">Demir</span></div><div class="pm" style="left:80%;top:18%"><b>84</b><span lang="tr">Öztürk</span></div>
+</div>
+<div class="abs" style="left:80px;right:80px;bottom:200px;display:flex;justify-content:space-between;align-items:center">
+<img src="logo/kombi-quer-auf-dunkel.svg" style="height:60px" alt=""><span class="k" style="font-size:34px" lang="tr">Neden? Profilde ↑</span></div></div><div class="tpl post" id="untertitel" style="width:1080px;height:1920px;background:#3a3f45">
+<div class="foto" style="width:1080px;height:1920px;position:absolute;inset:0"><span>Platzhalter Videobild</span></div>
+<div class="abs" style="left:100px;right:190px;top:1180px;text-align:center">
+<span class="sub-style" style="font-size:56px;line-height:1.45;-webkit-box-decoration-break:clone;box-decoration-break:clone">Drei Spiele, zwei Tore –<br>und <span style="color:var(--accentText)">plus vier</span> auf der Karte.</span></div>
+<div class="abs k" style="left:60px;top:250px;font-size:30px;color:#fff;opacity:.9">Untertitel: max. 2 Zeilen · 42 Zeichen pro Zeile · Schlüsselwort in Rot</div></div></div>
+<div class="row-b"><div class="tpl post" id="karussell-1" style="width:1080px;height:1350px"><div class="abs" style="left:80px;top:90px;right:80px"><span class="lg" style="background:var(--leagueBL)">BUNDESLIGA</span>
+<div class="hl" style="font-size:150px;margin-top:40px">Aufwertung<br>der Woche</div></div><div class="abs" style="left:80px;bottom:80px;right:80px;display:flex;justify-content:space-between;align-items:flex-end"><img src="logo/kombi-quer-mono-weiss.svg" style="height:54px" alt=""><span class="k" style="font-size:34px">Wischen →</span></div></div><div class="tpl post dark" id="karussell-2" style="width:1080px;height:1350px">
+<div class="abs" style="left:80px;top:90px;right:80px"><div class="k" style="font-size:36px;color:var(--accentText)">2 / 4 · Der Grund</div>
+<div class="hl" style="font-size:96px;margin-top:30px">Pressing über<br>Ligaschnitt</div></div>
+<div class="abs" style="left:80px;right:80px;top:560px">
+<div class="row"><span>Ballgewinne</span><b class="big" style="font-size:96px">14</b><em class="chipup">▲ +5</em></div><div class="row"><span>Tore</span><b class="big" style="font-size:96px">2</b><em class="chipup">▲ +2</em></div><div class="row"><span>Sprints</span><b class="big" style="font-size:96px">61</b><em class="chipup">▲ +9</em></div>
+</div><div class="abs k" style="left:80px;bottom:70px;font-size:30px;opacity:.8">Quelle: FootPulse-Rating nach Spieltag 11</div></div><div class="tpl post" id="karussell-3" style="width:1080px;height:1350px">
+<div class="abs" style="left:80px;top:140px;right:80px"><div class="hl" style="font-size:130px">Jede Zahl<br>hat einen<br>Grund.</div>
+<div style="font-size:44px;margin-top:40px;font-family:var(--font-text)">Warteliste: footpulse.org</div></div>
+<div class="abs" style="left:80px;bottom:90px"><img src="logo/kombi-quer-mono-weiss.svg" style="height:70px" alt=""></div></div></div>
+<div class="row-b"><div class="tpl post dark" id="x-bild" style="width:1600px;height:900px">
+<div class="foto" style="width:700px;height:900px;position:absolute;right:0;top:0"><span>Platzhalter Spielerfoto (frei lizenziert)</span></div>
+<div class="abs" style="left:80px;top:80px;width:760px"><span class="lg" style="background:var(--leaguePL)">PREMIER LEAGUE</span>
+<div class="k" style="font-size:36px;margin-top:30px;color:var(--accentText)">Gameweek 11</div>
+<div class="hl" style="font-size:120px;margin-top:16px">Biggest riser</div>
+<div class="big" style="font-size:200px;line-height:.85;margin-top:20px">+3</div></div>
+<div class="abs" style="left:80px;bottom:70px"><img src="logo/kombi-quer-auf-dunkel.svg" style="height:48px" alt=""></div></div><div class="tpl post dark" id="intro-1" style="width:540px;height:960px"><div class="abs" style="inset:0;display:flex;align-items:center;justify-content:center;padding:40px;transform:scale(.5);transform-origin:center;width:1080px;height:1920px;left:-270px;top:-480px"><img src="logo/bildmarke-rot.svg" style="height:260px" alt=""></div><span class="fr">Intro 1 · 0,0–0,4 s</span></div><div class="tpl post " id="intro-2" style="width:540px;height:960px"><div class="abs" style="inset:0;display:flex;align-items:center;justify-content:center;padding:40px;transform:scale(.5);transform-origin:center;width:1080px;height:1920px;left:-270px;top:-480px"><div class="big" style="font-size:300px;line-height:.8">+4</div></div><span class="fr">Intro 2 · 0,4–1,0 s</span></div><div class="tpl post dark" id="intro-3" style="width:540px;height:960px"><div class="abs" style="inset:0;display:flex;align-items:center;justify-content:center;padding:40px;transform:scale(.5);transform-origin:center;width:1080px;height:1920px;left:-270px;top:-480px"><div class="hl" style="font-size:90px">Warum?</div></div><span class="fr">Intro 3 · 1,0–1,6 s</span></div><div class="tpl post " id="outro-1" style="width:540px;height:960px"><div class="abs" style="inset:0;display:flex;align-items:center;justify-content:center;padding:40px;transform:scale(.5);transform-origin:center;width:1080px;height:1920px;left:-270px;top:-480px"><div class="hl" style="font-size:84px;text-align:center">Jede Zahl<br>hat einen Grund.</div></div><span class="fr">Outro 1 · letzte 2 s</span></div><div class="tpl post dark" id="outro-2" style="width:540px;height:960px"><div class="abs" style="inset:0;display:flex;align-items:center;justify-content:center;padding:40px;transform:scale(.5);transform-origin:center;width:1080px;height:1920px;left:-270px;top:-480px"><div style="text-align:center"><img src="logo/kombi-quer-auf-dunkel.svg" style="height:84px" alt=""><div class="k" style="font-size:36px;margin-top:40px">footpulse.org</div></div></div><span class="fr">Outro 2 · letzte 1 s</span></div></div>
+</div>
+<script>
+const nur = new URLSearchParams(location.search).get("nur");
+if (nur) {
+  const ids = nur.split(",");
+  const b = document.querySelector(".board");
+  const row = document.createElement("div"); row.style.cssText = "display:flex;gap:0;align-items:flex-start";
+  ids.forEach(id => row.appendChild(document.getElementById(id)));
+  b.replaceWith(row); document.body.style.background = "#000";
+}
+</script></body></html>
